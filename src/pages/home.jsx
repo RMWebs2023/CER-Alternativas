@@ -13,13 +13,8 @@ const Home = () => {
             <div className="col-lg-6 col-sm-12">
               <div>
                 <div className=" text-center text-md-start ">
-                  <h1 className=" display-2 fw-bold  mb-3">
-                    Find your dream job that you love to do.
-                  </h1>
-                  <p className="lead">
-                    The largest remote work community in the world. Sign up and
-                    post a job or create your developer profile.
-                  </p>
+                  <h1 className=" display-2 fw-bold  mb-3">CER ALTERNATIVAS</h1>
+                  <p className="lead">Placement Solutions</p>
                 </div>
                 <div className="mt-8">
                   <div className="bg-white rounded-md-pill shadow rounded-3 mb-4">
@@ -192,40 +187,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Cards */}
-      <section id="cards" className="py-lg-12 pb-8 bg-white">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-8 col-md-12 col-12 offset-xl-2">
-              <div className="text-center mb-8">
-                <span className="text-uppercase text-primary fw-semi-bold ls-md">
-                  Últimas ofertas
-                </span>
-                <h2 className="h1 fw-bold mt-3">
-                  Explora nuestras increíbles ofertas laborales
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        {offers.map((offer) => (
-          <Cards
-            name={offer.name}
-            description={offer.description}
-            experience={offer.experience}
-          />
-        ))}
-        <div className="mt-6 text-center">
-          <a
-            role="button"
-            tabIndex="0"
-            href="#"
-            className="btn btn-outline-primary"
-          >
-            Browse All Jobs Postings
-          </a>
-        </div>
-      </section>
+      <Cards />
 
       <section className="py-lg-14 pt-8 py-10 bg-white">
         <div className="container">

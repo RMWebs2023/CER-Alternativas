@@ -106,6 +106,17 @@ const Home = () => {
                       </form>
                     </div>
                   </div>
+                  <span className=" fs-4">
+                    Currently listing
+                    {/* */}
+                    30,642
+                    {/* */}
+                    jobs from
+                    {/* */}
+                    5,717
+                    {/* */}
+                    companies
+                  </span>
                 </div>
               </div>
             </div>

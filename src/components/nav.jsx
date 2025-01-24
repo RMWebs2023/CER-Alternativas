@@ -1,90 +1,51 @@
+import icon from "../images/favicon_png.png";
+
 const Nav = () => {
   return (
-    <nav className="navbar-default navbar navbar-expand-lg navbar-light">
-      <div className="px-0 container">
-        <a className="navbar-brand" href="/">
-          <img src="/images/brand/logo/logo.svg" alt="" className="" />
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          <img src={icon} alt="Logo" width="70" height="64" className="d-inline-block align-text-top" />
         </a>
         <button
-          aria-controls="navbar-default"
+          className="navbar-toggler"
           type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
           aria-label="Toggle navigation"
-          className="navbar-toggler collapsed"
         >
-          <span className="icon-bar top-bar mt-0"></span>
-          <span className="icon-bar middle-bar"></span>
-          <span className="icon-bar bottom-bar"></span>
+          <span className="navbar-toggler-icon" />
         </button>
-        <div className="navbar-collapse collapse" id="navbar-default">
-          <div className="ms-auto navbar-nav">
-            <div className="nav-item pt-1">
+        <div className="collapse navbar-collapse text-light" id="navbarSupportedContent">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Features</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Pricing</a>
+            </li>
+            <li className="nav-item dropdown">
               <a
-                data-rr-ui-event-key="/marketing/landings/landing-job/"
-                className="nav-link"
-                href="/marketing/landings/landing-job"
-              >
-                Home
-              </a>
-            </div>
-            <div className="nav-item dropdown">
-              <a
-                aria-expanded="false"
-                role="button"
-                className="dropdown-toggle nav-link"
-                tabIndex="0"
+                className="nav-link dropdown-toggle"
                 href="#"
-              >
-                Listing
-              </a>
-            </div>
-            <div className="nav-item dropdown">
-              <a
-                aria-expanded="false"
                 role="button"
-                className="dropdown-toggle nav-link"
-                tabIndex="0"
-                href="#"
-              >
-                Pages
-              </a>
-            </div>
-            <div className="nav-item pt-1">
-              <a data-rr-ui-event-key="/" className="nav-link" href="/">
-                Back to Demo
-              </a>
-            </div>
-            <div className="nav-item dropdown">
-              <a
-                id="basic-nav-dropdown"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
-                role="button"
-                className="dropdown-toggle no-dropdown-arrow d-block nav-link fs-3 lh-1 pt-0"
-                tabIndex="0"
-                href="#"
               >
-                ...
+                Dropdown link
               </a>
-            </div>
-            <div className="ms-6 mt-3 mt-lg-0">
-              <div className="d-flex align-items-center">
-                <a
-                  data-rr-ui-event-key="#"
-                  className="btn btn-outline-primary me-2 btn"
-                  href="/marketing/landings/landing-job#"
-                >
-                  Sign In
-                </a>
-                <a
-                  data-rr-ui-event-key="#"
-                  className="btn btn-primary btn"
-                  href="/marketing/landings/landing-job#"
-                >
-                  Sign Up
-                </a>
-              </div>
-            </div>
-            <span className="ms-auto mt-3 mt-lg-0"></span>
-          </div>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">Action</a></li>
+                <li><a className="dropdown-item" href="#">Another action</a></li>
+                <li><a className="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

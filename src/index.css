@@ -16169,6 +16169,7 @@ fieldset:disabled .btn {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  flex-direction: row-reverse;
 }
 .navbar-toggler {
   padding: var(--geeks-navbar-toggler-padding-y)
@@ -37074,7 +37075,7 @@ fieldset:disabled .btn {
   padding: 1rem 1.25rem;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  color: var(--geeks-gray-800);
+  color: white;
   font-weight: 500;
   padding: 0.3125rem 0.5rem;
 }
@@ -37094,7 +37095,10 @@ fieldset:disabled .btn {
 }
 .navbar .navbar-nav .nav-item .nav-link.active,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: var(--geeks-primary);
+  color: white;
+}
+.nav-link:hover {
+  color: var(--geeks-primary) !important;
 }
 .navbar .navbar-nav .nav-item .nav-link:focus-visible {
   box-shadow: none !important;

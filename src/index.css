@@ -37034,6 +37034,7 @@ fieldset:disabled .btn {
 }
 .navbar .dropdown-menu {
   top: 26px;
+  right: 0px;
   margin: 1.125rem 0;
   padding: 1rem 0;
   font-size: 0.875rem;

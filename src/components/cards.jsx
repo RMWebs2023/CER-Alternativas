@@ -1,7 +1,4 @@
-import { useState } from "react";
-import offers from "../database/database.js";
-
-const Cards = ({ name, description, experience }) => {
+const Cards = ({ data }) => {
   return (
     <>
       <section className="py-lg-12 pb-8 bg-white">
@@ -10,14 +7,14 @@ const Cards = ({ name, description, experience }) => {
             <div className="col-xl-8 col-md-12 col-12 offset-xl-2">
               <div className="text-center mb-8">
                 <span className="text-uppercase text-primary fw-semi-bold ls-md">
-                  Latest Job Opening
+                  Últimas ofertas
                 </span>
                 <h2 className="h1 fw-bold mt-3">
-                  Explore remote friendly, flexible job opportunities
+                  Explora nuestras ofertas laborales
                 </h2>
               </div>
 
-              {offers.map((o) => (
+              {data.map((item) => (
                 <div className="card-bordered mb-4 card-hover cursor-pointer card">
                   <div className="card-body">
                     <div>
@@ -37,7 +34,7 @@ const Cards = ({ name, description, experience }) => {
                                   className="text-inherit me-1"
                                   href="/marketing/jobs/helpdesk-software-engineer-web3crypto"
                                 >
-                                  {o.name}
+                                  {item.name}
                                 </a>
                                 <span className="badge bg-danger-soft ms-2">
                                   Featured Job
@@ -97,7 +94,9 @@ const Cards = ({ name, description, experience }) => {
                               </span>
                               <span className="me-2">
                                 <i className="fe fe-map-pin text-muted"></i>
-                                <span className="ms-1 ">Ahmedabad, Gujarat</span>
+                                <span className="ms-1 ">
+                                  {item.location}
+                                </span>
                               </span>
                             </div>
                             <div>

@@ -1,9 +1,26 @@
+import { useState, useRef } from "react";
 import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 
 const Home = () => {
+  const [titleJob, setTitleJob] = useState();
+  const [searchJob, setSearchJob] = useState();
+  const [data, setData] = useState(offers);
+  const targetRef = useRef(null);
+
+  const titleFilter = offers.filter((item) => item.name.toLowerCase().includes(titleJob));
+  const searchFilter = offers.filter((item) =>
+    item.location.toLowerCase().includes(searchJob)
+  );
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+    setData(titleFilter || searchFilter);
+  };
+
   return (
     <main>
       <Nav />
@@ -16,6 +33,8 @@ const Home = () => {
                   <h1 className=" display-2 fw-bold  mb-3">CER ALTERNATIVAS</h1>
                   <p className="lead">Placement Solutions</p>
                 </div>
+
+                {/* Search */}
                 <div className="mt-8">
                   <div className="bg-white rounded-md-pill shadow rounded-3 mb-4">
                     <div className="p-md-2 p-4">
@@ -38,7 +57,8 @@ const Home = () => {
                               </svg>
                             </span>
                             <input
-                              placeholder="Job Title"
+                              onChange={(e) => setTitleJob(e.target.value)}
+                              placeholder="Puesto"
                               aria-label="Job Title"
                               aria-describedby="searchJob"
                               type="search"
@@ -65,7 +85,8 @@ const Home = () => {
                               </svg>
                             </span>
                             <input
-                              placeholder="Search Job"
+                              onChange={(e) => setSearchJob(e.target.value)}
+                              placeholder="Ubicación"
                               aria-label="Search Job"
                               aria-describedby="location"
                               type="search"
@@ -77,24 +98,14 @@ const Home = () => {
                           <button
                             type="submit"
                             className="rounded-pill btn btn-primary"
+                            onClick={handleSubmit}
                           >
-                            Search
+                            Buscar
                           </button>
                         </div>
                       </form>
                     </div>
                   </div>
-                  <span className=" fs-4">
-                    Currently listing
-                    {/* */}
-                    30,642
-                    {/* */}
-                    jobs from
-                    {/* */}
-                    5,717
-                    {/* */}
-                    companies
-                  </span>
                 </div>
               </div>
             </div>
@@ -131,6 +142,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="py-8 bg-white">
         <div className="container">
           <div className="row">
@@ -187,7 +199,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Cards />
+      <Cards data={data} ref={targetRef} />
 
       <section className="py-lg-14 pt-8 py-10 bg-white">
         <div className="container">

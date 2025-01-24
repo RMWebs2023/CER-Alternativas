@@ -85,9 +85,9 @@ const Home = () => {
                     </div>
                   </div>
                   <span className=" fs-4">
-                    Currently listing
+                    Currently listing:
                     {/* */}
-                    30,642
+                    30,642  
                     {/* */}
                     jobs from
                     {/* */}

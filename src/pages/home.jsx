@@ -10,7 +10,9 @@ const Home = () => {
   const [data, setData] = useState(offers);
   const targetRef = useRef(null);
 
-  const titleFilter = offers.filter((item) => item.name.toLowerCase().includes(titleJob));
+  const titleFilter = offers.filter((item) =>
+    item.name.toLowerCase().includes(titleJob)
+  );
   const searchFilter = offers.filter((item) =>
     item.location.toLowerCase().includes(searchJob)
   );
@@ -18,7 +20,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     targetRef.current.scrollIntoView({ behavior: "smooth" });
-    setData(titleFilter || searchFilter);
+    data.length === 0 ? setData(offers) : setData(titleFilter || searchFilter);
   };
 
   return (
@@ -154,7 +156,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-8 bg-white">
+      <section ref={targetRef} className="py-8 bg-white">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-sm-12 offset-xl-1">
@@ -210,7 +212,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Cards data={data} ref={targetRef} />
+      <Cards data={data} />
 
       <section className="py-lg-14 pt-8 py-10 bg-white">
         <div className="container">

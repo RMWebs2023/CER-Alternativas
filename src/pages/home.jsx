@@ -98,6 +98,7 @@ const Home = () => {
                           <button
                             type="submit"
                             className="rounded-pill btn btn-primary"
+                            onClick={handleSubmit}
                           >
                             Search
                           </button>

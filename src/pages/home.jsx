@@ -2,14 +2,17 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
+import vector from "../images/vector1.png"
 
 const Home = () => {
   return (
     <main>
       <Nav />
-      <section className="bg-light py-lg-14 py-12 bg-cover">
+      {/* Primera parte del index */}
+      <section className="bg-dark py-lg-14 py-12 bg-cover text-light">
         <div className="container">
           <div className="align-items-center row">
+            {/* Buscador */}
             <div className="col-lg-6 col-sm-12">
               <div>
                 <div className=" text-center text-md-start ">
@@ -98,34 +101,13 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/* Vector */}
             <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
                 <img
-                  src="/images/job/png/job-hero-section.png"
-                  alt=""
-                  className="img-fluid "
+                  src={vector}
+                  width="90%" height="auto"
                 />
-                <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
-                  <img
-                    src="/images/job/job-hero-block-1.svg"
-                    alt=""
-                    className="img-fluid "
-                  />
-                </div>
-                <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
-                  <img
-                    src="/images/job/job-hero-block-2.svg"
-                    alt=""
-                    className="img-fluid "
-                  />
-                </div>
-                <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
-                  <img
-                    src="/images/job/job-hero-block-3.svg"
-                    alt=""
-                    className="img-fluid "
-                  />
-                </div>
               </div>
             </div>
           </div>

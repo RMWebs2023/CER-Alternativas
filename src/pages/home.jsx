@@ -138,7 +138,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Marcas con las que se trabaja */}
       <section ref={targetRef} className="py-8 color-grey">
         <div className="container">
           <div className="row">
@@ -194,9 +194,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Oferta laborales */}
       <Cards data={data} />
-
+      {/* How it works */}
       <section className="py-lg-14 pt-8 py-10 bg-white">
         <div className="container">
           <div className="row">

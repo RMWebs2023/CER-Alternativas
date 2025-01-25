@@ -45249,8 +45249,11 @@ a.fc-event:hover {
 }
 
 .img-index {
-  width: 50%;
+  width: 100%;
   height: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .img-index:hover {

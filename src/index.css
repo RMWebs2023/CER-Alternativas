@@ -45233,3 +45233,26 @@ a.fc-event:hover {
   transform: scale(0.5);
   opacity: 0;
 }
+
+.search-button {
+  background-color: #8C68CD !important;
+  color: white !important;
+  border-color: #8C68CD !important;
+}
+
+.search-button:hover {
+  background-color: #59359A !important;
+}
+
+.color-grey {
+  background-color: #2B3035 !important;
+}
+
+.img-index {
+  width: 50%;
+  height: auto;
+}
+
+.img-index:hover {
+  filter: drop-shadow(5px 5px 2px grey);
+}

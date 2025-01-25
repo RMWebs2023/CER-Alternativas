@@ -1,8 +1,14 @@
+import { useState, useRef } from "react";
 import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 import vector from "../images/vector1.png"
+import stripe from "../images/stripe.png";
+import airbnb from "../images/airbnb.png"
+import discord from "../images/discord.png";
+import booking from "../images/booking.png";
+import pinterest from "../images/pinterest.png";
 
 const Home = () => {
   const [titleJob, setTitleJob] = useState();
@@ -97,7 +103,7 @@ const Home = () => {
                         <div className="text-end d-grid col-md-3 col-sm-12">
                           <button
                             type="submit"
-                            className="rounded-pill btn btn-primary"
+                            className="rounded-pill btn btn-primary search-button"
                             onClick={handleSubmit}
                           >
                             Search
@@ -133,7 +139,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section ref={targetRef} className="py-8 bg-white">
+      <section ref={targetRef} className="py-8 color-grey">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-sm-12 offset-xl-1">
@@ -141,45 +147,45 @@ const Home = () => {
                 <div className="col">
                   <div className="mb-3 mt-3">
                     <img
-                      src="/images/brand/gray-logo-stripe.svg"
+                      src={stripe}
                       alt=""
-                      className=""
+                      className="img-index"
                     />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
                     <img
-                      src="/images/brand/gray-logo-airbnb.svg"
+                      src={airbnb}
                       alt=""
-                      className=""
+                      className="img-index"
                     />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
                     <img
-                      src="/images/brand/gray-logo-discord.svg"
+                      src={discord}
                       alt=""
-                      className=""
+                      className="img-index"
                     />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
                     <img
-                      src="/images/brand/gray-logo-intercom.svg"
+                      src={booking}
                       alt=""
-                      className=""
+                      className="img-index"
                     />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
                     <img
-                      src="/images/brand/gray-logo-pinterest.svg"
+                      src={pinterest}
                       alt=""
-                      className=""
+                      className="img-index"
                     />
                   </div>
                 </div>

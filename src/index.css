@@ -23031,6 +23031,9 @@ fieldset:disabled .btn {
 }
 .text-center {
   text-align: center !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 .text-decoration-none {
   text-decoration: none !important;
@@ -23062,7 +23065,7 @@ fieldset:disabled .btn {
 }
 .text-primary {
   --geeks-text-opacity: 1;
-  color: rgba(var(--geeks-primary-rgb), var(--geeks-text-opacity)) !important;
+  color: #59359A !important;
 }
 .text-secondary {
   --geeks-text-opacity: 1;
@@ -45249,11 +45252,8 @@ a.fc-event:hover {
 }
 
 .img-index {
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+  width: 90%;
+  max-height: auto;
 }
 
 .img-index:hover {

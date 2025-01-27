@@ -1,7 +1,7 @@
 const Cards = ({ data }) => {
   return (
     <>
-      <section className="py-lg-12 pb-8 bg-white">
+      <section className="py-lg-12 pb-8 bg-dark text-light">
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-md-12 col-12 offset-xl-2">

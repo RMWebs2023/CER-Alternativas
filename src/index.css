@@ -45241,13 +45241,13 @@ a.fc-event:hover {
 }
 
 .search-button {
-  background-color: #8C68CD !important;
+  background-color: #6f42c1 !important;
   color: white !important;
-  border-color: #8C68CD !important;
+  border-color: #6f42c1 !important;
 }
 
 .search-button:hover {
-  background-color: #59359A !important;
+  background-color: #472b7b !important;
 }
 
 .color-grey {
@@ -45291,4 +45291,16 @@ a.fc-event:hover {
 
 .description {
   margin: 15px 0px;
+}
+
+.text-format {
+  text-decoration: none;
+}
+
+.text-format:hover {
+  color: #6f42c1 !important;
+}
+
+.nav-link:hover {
+  color: #6f42c1 !important;
 }

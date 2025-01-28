@@ -38,7 +38,7 @@ const Cards = ({ data }) => {
                             <div>
                               <h3 className="mb-1 fs-4">
                                 <a
-                                  className="text-inherit me-1 text-light"
+                                  className="text-inherit me-1 text-light text-format"
                                   href="/marketing/jobs/helpdesk-software-engineer-web3crypto"
                                 >
                                   {item.name}
@@ -53,15 +53,6 @@ const Cards = ({ data }) => {
                                   {/* <!-- --> */}
                                   HelpDesk (Empresa que busca)
                                   {/* <!-- --> */}
-                                </span>
-                                <span className="text-light ms-2 fw-medium">
-                                  4.5 <span></span>
-                                  {/* <!-- --> */}
-                                  <FaRegStar />
-                                </span>
-                                <span className="ms-0">
-                                  {/* <!-- --> */}
-                                  <span> </span> 131 Reviews
                                 </span>
                               </div>
                             </div>

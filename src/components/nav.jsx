@@ -1,11 +1,30 @@
 import icon from "../images/favicon_png.png";
 
-const Nav = () => {
+const Nav = ({ targetRef, targetRefFooter }) => {
+  const handleClick = (e) => {
+    e.preventDefault;
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleClickFooter = (e) => {
+    e.preventDefault;
+    targetRefFooter.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav
+      className="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src={icon} alt="Logo" width="70" height="64" className="d-inline-block align-text-top" />
+          <img
+            src={icon}
+            alt="Logo"
+            width="70"
+            height="64"
+            className="d-inline-block align-text-top"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -18,16 +37,15 @@ const Nav = () => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse text-light" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse text-light"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Programas</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Requisitos</a>
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -37,29 +55,50 @@ const Nav = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Quienes somos
+                Servicios
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Oportunidades laborales
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Cruceros
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Hoteles de Argentina
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Training en Gerenciamiento
+                  </a>
+                </li>
               </ul>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contacto
+            <li className="nav-item">
+              <a ref={targetRef} className="nav-link" href="#" onClick={handleClick}>
+                Búsquedas activas
               </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={handleClick}>
+                Pasantías rentadas al exterior
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={handleClick}>
+                Pasantías en Argentina
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={handleClickFooter}>
+                Contáctanos
+              </a>
             </li>
           </ul>
         </div>

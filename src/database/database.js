@@ -1,31 +1,22 @@
 const offers = [
   {
-    name: "Oferta laboral 1",
-    description: "Esto es una descripción",
+    name: "Pasantía Rentada en hoteles de USA",
+    description:
+      "¡OPORTUNIDAD! Según tu perfil, te acercamos oportunidades laborales de vacantes disponibles para que puedas aplicar a diferentes puestos de trabajo, en el marco de práctica profesional rentada. Ofrecemos asesoría desde el inicio del proceso y durante tu desempeño.",
     experience: "Experiencia laboral",
-    location: "Argentina",
+    location: "Estados Unidos",
   },
   {
-    name: "Oferta laboral 2",
-    description: "Esto es una descripción",
+    name: "Training en Gerenciamiento hotelero CARIBE",
+    description:
+      "¡OPORTUNIDAD! Según tu perfil, te acercamos oportunidades laborales de vacantes disponibles para que puedas aplicar a diferentes puestos de trabajo, en el marco de práctica profesional rentada. Ofrecemos asesoría desde el inicio del proceso y durante tu desempeño.",
     experience: "Experiencia laboral",
-    location: "Argentina",
+    location: "Caribe",
   },
   {
-    name: "Oferta laboral 3",
-    description: "Esto es una descripción",
-    experience: "Experiencia laboral",
-    location: "Argentina",
-  },
-  {
-    name: "oferta laboral 4",
-    description: "Esto es una descripción",
-    experience: "Experiencia laboral",
-    location: "Argentina",
-  },
-  {
-    name: "Oferta laboral 5",
-    description: "Esto es una descripción",
+    name: "Trabajá en CRUCEROS",
+    description:
+      "¡OPORTUNIDAD! Según tu perfil, te acercamos oportunidades laborales de vacantes disponibles para que puedas aplicar a diferentes puestos de trabajo, en el marco de práctica profesional rentada. Ofrecemos asesoría desde el inicio del proceso y durante tu desempeño.",
     experience: "Experiencia laboral",
     location: "Argentina",
   },

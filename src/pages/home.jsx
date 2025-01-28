@@ -3,9 +3,9 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
-import vector from "../images/vector1.png"
+import vector from "../images/vector1.png";
 import stripe from "../images/stripe.png";
-import airbnb from "../images/airbnb.png"
+import airbnb from "../images/airbnb.png";
 import discord from "../images/discord.png";
 import booking from "../images/booking.png";
 import pinterest from "../images/pinterest.png";
@@ -15,11 +15,12 @@ const Home = () => {
   const [searchJob, setSearchJob] = useState();
   const [data, setData] = useState(offers);
   const targetRef = useRef(null);
+  const targetRefFooter = useRef(null);
 
   const titleFilter = offers.filter((item) =>
     item.name.toLowerCase().includes(titleJob)
   );
-  
+
   const searchFilter = offers.filter((item) =>
     item.location.toLowerCase().includes(searchJob)
   );
@@ -32,7 +33,7 @@ const Home = () => {
 
   return (
     <main>
-      <Nav />
+      <Nav targetRef={targetRef} targetRefFooter={targetRefFooter} />
       {/* Primera parte del index */}
       <section className="bg-dark py-lg-14 py-12 bg-cover text-light">
         <div className="container">
@@ -130,10 +131,7 @@ const Home = () => {
             {/* Vector */}
             <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
-                <img
-                  src={vector}
-                  width="90%" height="auto"
-                />
+                <img src={vector} width="90%" height="auto" />
               </div>
             </div>
           </div>
@@ -147,47 +145,27 @@ const Home = () => {
               <div className="text-center row">
                 <div className="col">
                   <div className="mb-3 mt-3">
-                    <img
-                      src={stripe}
-                      alt=""
-                      className="img-index"
-                    />
+                    <img src={stripe} alt="" className="img-index" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
-                    <img
-                      src={airbnb}
-                      alt=""
-                      className="img-index"
-                    />
+                    <img src={airbnb} alt="" className="img-index" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
-                    <img
-                      src={discord}
-                      alt=""
-                      className="img-index"
-                    />
+                    <img src={discord} alt="" className="img-index" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
-                    <img
-                      src={booking}
-                      alt=""
-                      className="img-index"
-                    />
+                    <img src={booking} alt="" className="img-index" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="mb-3 mt-3">
-                    <img
-                      src={pinterest}
-                      alt=""
-                      className="img-index"
-                    />
+                    <img src={pinterest} alt="" className="img-index" />
                   </div>
                 </div>
               </div>
@@ -673,7 +651,7 @@ const Home = () => {
         </div>
       </section>
       {/* Top de empresas contratando */}
-      <section className="py-lg-14 bg-light pt-8 pb-10">
+      <section ref={targetRefFooter} className="py-lg-14 bg-light pt-8 pb-10">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">

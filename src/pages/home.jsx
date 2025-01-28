@@ -1,3 +1,4 @@
+import { useState, useRef } from "react";
 import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
@@ -13,6 +14,7 @@ const Home = () => {
   const titleFilter = offers.filter((item) =>
     item.name.toLowerCase().includes(titleJob)
   );
+  
   const searchFilter = offers.filter((item) =>
     item.location.toLowerCase().includes(searchJob)
   );

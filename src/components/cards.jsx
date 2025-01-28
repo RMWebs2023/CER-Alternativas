@@ -22,7 +22,10 @@ const Cards = ({ data }) => {
               </div>
 
               {data.map((item) => (
-                <div className="card-bordered mb-4 card-hover cursor-pointer card color-grey text-light">
+                <div
+                  className="card-bordered mb-4 card-hover cursor-pointer card color-grey text-light"
+                  key={item.id}
+                >
                   <div className="card-body">
                     <div>
                       <div className="d-md-flex">
@@ -43,9 +46,7 @@ const Cards = ({ data }) => {
                                 >
                                   {item.name}
                                 </a>
-                                <span className=" ms-2 new">
-                                  New
-                                </span>
+                                <span className=" ms-2 new">New</span>
                               </h3>
                               <div>
                                 <span>
@@ -58,9 +59,7 @@ const Cards = ({ data }) => {
                             </div>
                           </div>
                           <div className="ms-md-1 w-100 mt-1 mt-xl-1">
-                            <p className="description">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam illo animi consequatur illum expedita adipisci veritatis repellat ducimus necessitatibus itaque distinctio odio, tenetur dolor, corporis hic commodi perferendis unde.
-                            </p>
+                            <p className="description">{item.description}</p>
                           </div>
                           <div className="d-md-flex justify-content-between ">
                             <div className="mb-2 mb-md-0">
@@ -74,9 +73,7 @@ const Cards = ({ data }) => {
                               </span>
                               <span className="me-2">
                                 <MdOutlineLocationOn />
-                                <span className="ms-1 ">
-                                  {item.location}
-                                </span>
+                                <span className="ms-1 ">{item.location}</span>
                               </span>
                             </div>
                             <div>

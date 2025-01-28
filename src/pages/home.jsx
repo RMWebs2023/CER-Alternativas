@@ -11,24 +11,48 @@ import booking from "../images/booking.png";
 import pinterest from "../images/pinterest.png";
 
 const Home = () => {
-  const [titleJob, setTitleJob] = useState();
-  const [searchJob, setSearchJob] = useState();
+  const [titleJob, setTitleJob] = useState("");
+  const [searchJob, setSearchJob] = useState("");
   const [data, setData] = useState(offers);
   const targetRef = useRef(null);
   const targetRefFooter = useRef(null);
 
-  const titleFilter = offers.filter((item) =>
-    item.name.toLowerCase().includes(titleJob)
-  );
+  const handleTitleJob = (e) => {
+    setTitleJob(e.target.value);
 
-  const searchFilter = offers.filter((item) =>
-    item.location.toLowerCase().includes(searchJob)
-  );
+    const titleFilter = offers.filter((item) =>
+      item.name.toLowerCase().includes(e.target.value)
+    );
+
+    setData(titleFilter);
+  };
+
+  const handleSearchJob = (e) => {
+    setSearchJob(e.target.value);
+
+    const searchFilter = offers.filter((item) =>
+      item.location.toLowerCase().includes(e.target.value)
+    );
+
+    setData(searchFilter);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     targetRef.current.scrollIntoView({ behavior: "smooth" });
-    data.length === 0 ? setData(offers) : setData(titleFilter || searchFilter);
+    if (titleJob) {
+      const titleFilter = offers.filter((item) =>
+        item.name.toLowerCase().includes(titleJob)
+      );
+      setData(titleFilter);
+    } else if (searchJob) {
+      const searchFilter = offers.filter((item) =>
+        item.location.toLowerCase().includes(searchJob)
+      );
+      setData(searchFilter);
+    } else {
+      setData(offers);
+    }
   };
 
   return (
@@ -67,7 +91,8 @@ const Home = () => {
                               </svg>
                             </span>
                             <input
-                              placeholder="Job Title"
+                              onChange={handleTitleJob}
+                              placeholder="Trabajo"
                               aria-label="Job Title"
                               aria-describedby="searchJob"
                               type="search"
@@ -94,7 +119,8 @@ const Home = () => {
                               </svg>
                             </span>
                             <input
-                              placeholder="Search Job"
+                              onChange={handleSearchJob}
+                              placeholder="Ubicación"
                               aria-label="Search Job"
                               aria-describedby="location"
                               type="search"

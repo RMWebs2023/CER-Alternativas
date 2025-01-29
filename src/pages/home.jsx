@@ -217,7 +217,7 @@ const Home = () => {
               <div className="gy-6 row">
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       1
                     </div>
                     <h3>Click on &#x27;Post a job &#x27;</h3>
@@ -229,7 +229,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       2
                     </div>
                     <h3>Select an upgrade if required </h3>
@@ -242,7 +242,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border border-2 fs-3 rounded-circle mb-4 smooth-shadow-md">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       3
                     </div>
                     <h3>Purchase the listing </h3>
@@ -287,9 +287,9 @@ const Home = () => {
               </div>
               <div className="gy-4 row">
                 <div className="col-lg-3 col-md-4 col-12">
-                  <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                  <div className="border-top border-muted border-4 card-hover-with-icon card">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3 card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -307,7 +307,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Analtyics</h4>
-                          <p className="mb-0 text-muted">2k Jobs</p>
+                          <p className="mb-0 text-light">2k Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -330,8 +330,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -347,7 +347,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">UI / UX Design</h4>
-                          <p className="mb-0 text-muted">1k Jobs</p>
+                          <p className="mb-0 text-light">1k Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -370,8 +370,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -386,7 +386,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Developer</h4>
-                          <p className="mb-0 text-muted">800 Jobs</p>
+                          <p className="mb-0 text-light">800 Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -409,8 +409,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -425,7 +425,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Product Manager</h4>
-                          <p className="mb-0 text-muted">1.2K Jobs</p>
+                          <p className="mb-0 text-light">1.2K Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -448,8 +448,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -464,7 +464,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">SEO</h4>
-                          <p className="mb-0 text-muted">1200 Jobs</p>
+                          <p className="mb-0 text-light">1200 Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -487,8 +487,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -503,7 +503,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Data Analytics</h4>
-                          <p className="mb-0 text-muted">200 Jobs</p>
+                          <p className="mb-0 text-light">200 Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -526,8 +526,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -543,7 +543,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Mobile Developer</h4>
-                          <p className="mb-0 text-muted">120 Jobs</p>
+                          <p className="mb-0 text-light">120 Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg
@@ -566,8 +566,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 col-12">
                   <div className="border-top border-muted border-4 card-hover-with-icon  card">
-                    <div className="card-body">
-                      <div className="icon-shape icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
+                    <div className="card-body color-grey text-light">
+                      <div className="icon-shape-cat icon-lg rounded-circle bg-light text-muted mb-3  card-icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -582,7 +582,7 @@ const Home = () => {
                       <div className="d-flex align-items-center justify-content-between">
                         <div>
                           <h4 className="mb-0">Finance</h4>
-                          <p className="mb-0 text-muted">5k Jobs</p>
+                          <p className="mb-0 text-light">5k Jobs</p>
                         </div>
                         <a href="#" className="text-inherit">
                           <svg

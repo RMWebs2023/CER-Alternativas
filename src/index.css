@@ -38470,14 +38470,14 @@ header {
 .card-hover-with-icon:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-  border-top-color: var(--geeks-primary) !important;
+  border-top-color: #6f42c1 !important;
   transition: 1s ease;
 }
 .card-hover-with-icon.active .card-icon,
 .card-hover-with-icon:focus .card-icon,
 .card-hover-with-icon:hover .card-icon {
-  background-color: var(--geeks-light-primary) !important;
-  color: var(--geeks-primary) !important;
+  background-color: #6f42c1 !important;
+  color: white !important;
 }
 .card-lift {
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
@@ -45314,8 +45314,13 @@ a.fc-event:hover {
   color: #6f42c1;
 }
 
-.border {
-  border-color: #6f42c1 !important;
+.icon-shape-cat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  color: #6f42c1;
 }
 
 .button-search-cat {
@@ -45328,4 +45333,8 @@ a.fc-event:hover {
 .button-search-cat:hover {
   background-color: #6f42c1 !important;
   color: white !important;
+}
+
+.border-hiw {
+  border: 1px solid #6f42c1 !important;
 }

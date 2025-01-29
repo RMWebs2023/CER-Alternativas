@@ -45317,3 +45317,15 @@ a.fc-event:hover {
 .border {
   border-color: #6f42c1 !important;
 }
+
+.button-search-cat {
+  background-color: transparent !important;
+  border: solid 2px !important;
+  border-color: #6f42c1 !important;
+  color: #6f42c1 !important;
+}
+
+.button-search-cat:hover {
+  background-color: #6f42c1 !important;
+  color: white !important;
+}

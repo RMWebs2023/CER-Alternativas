@@ -206,9 +206,9 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
-              <div className="text-center row color">
+              <div className="text-center row">
                 <div className="px-lg-10 mb-8 mt-6 col-md-12">
-                  <span className="text-uppercase fw-semi-bold ls-md">
+                  <span className="text-uppercase fw-semi-bold ls-md color">
                     Process
                   </span>
                   <h2 className="h1 fw-bold mt-3">How It Works</h2>
@@ -268,13 +268,13 @@ const Home = () => {
         </div>
       </section>
       {/* Filtro por roles */}
-      <section className="py-lg-14 bg-light pt-8 pb-10">
+      <section className="py-lg-14 bg-dark text-light pt-8 pb-10">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
               <div className="text-center row">
                 <div className="px-lg-10 mb-8 mt-6 col-md-12">
-                  <span className="text-uppercase text-primary fw-semi-bold ls-md">
+                  <span className="text-uppercase color fw-semi-bold ls-md">
                     Browse Category
                   </span>
                   <h2 className="h1 fw-bold mt-3">
@@ -608,7 +608,7 @@ const Home = () => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn btn-outline-primary"
+                    className="btn button-search-cat"
                   >
                     View All Category
                   </a>

@@ -45350,3 +45350,15 @@ a.fc-event:hover {
   background-color: #6f42c1 !important;
   color: white !important;
 }
+
+.button-search-company {
+  background-color: transparent !important;
+  border: solid 2px !important;
+  border-color: #6f42c1 !important;
+  color: #6f42c1 !important;
+}
+
+.button-search-company:hover {
+  background-color: #6f42c1 !important;
+  color: white !important;
+}

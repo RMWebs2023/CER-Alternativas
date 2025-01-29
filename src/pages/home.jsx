@@ -678,13 +678,13 @@ const Home = () => {
         </div>
       </section>
       {/* Top de empresas contratando */}
-      <section ref={targetRefFooter} className="py-lg-14 bg-light pt-8 pb-10">
+      <section ref={targetRefFooter} className="py-lg-14 bg-dark text-light pt-8 pb-10">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
               <div className="text-center row">
                 <div className="px-lg-10 mb-8 mt-6 col-md-12">
-                  <span className="text-uppercase text-primary fw-semi-bold ls-md">
+                  <span className="text-uppercase color fw-semi-bold ls-md">
                     Top Companies Hiring
                   </span>
                   <h2 className="h1 fw-bold mt-3 mb-2">
@@ -698,7 +698,7 @@ const Home = () => {
               <div className="gy-4 row">
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body">
+                    <div className="card-body color-grey text-light">
                       <img
                         src="/images/job/job-company-logo-a.svg"
                         alt=""
@@ -709,7 +709,7 @@ const Home = () => {
                         <p className="mb-0">Worlds largest Internet Company</p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-dark">4240+</span>
+                        <span className="fw-semi-bold text-light">4240+</span>
                         Job Posting
                       </p>
                     </div>
@@ -717,7 +717,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body">
+                    <div className="card-body color-grey text-light">
                       <img
                         src="/images/job/job-company-logo-g.svg"
                         alt=""
@@ -730,7 +730,7 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-dark">216+</span>
+                        <span className="fw-semi-bold text-light">216+</span>
                         Job Posting
                       </p>
                     </div>
@@ -738,7 +738,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body">
+                    <div className="card-body color-grey text-light">
                       <img
                         src="/images/job/job-company-logo-l.svg"
                         alt=""
@@ -751,7 +751,7 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-dark">195+</span>
+                        <span className="fw-semi-bold text-light">195+</span>
                         Job Posting
                       </p>
                     </div>
@@ -759,7 +759,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body">
+                    <div className="card-body color-grey text-light">
                       <img
                         src="/images/job/job-company-logo-p.svg"
                         alt=""
@@ -772,7 +772,7 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-dark">180+</span>
+                        <span className="fw-semi-bold text-light">180+</span>
                         Job Posting
                       </p>
                     </div>
@@ -783,7 +783,7 @@ const Home = () => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn btn-outline-primary"
+                    className="btn button-search-company"
                   >
                     View All Companies
                   </a>

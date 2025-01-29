@@ -202,13 +202,13 @@ const Home = () => {
       {/* Oferta laborales */}
       <Cards data={data} />
       {/* How it works */}
-      <section className="py-lg-14 pt-8 py-10 bg-white">
+      <section className="py-lg-14 pt-8 py-10 color-grey text-light">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
-              <div className="text-center row">
+              <div className="text-center row color">
                 <div className="px-lg-10 mb-8 mt-6 col-md-12">
-                  <span className="text-uppercase text-primary fw-semi-bold ls-md">
+                  <span className="text-uppercase fw-semi-bold ls-md">
                     Process
                   </span>
                   <h2 className="h1 fw-bold mt-3">How It Works</h2>
@@ -217,7 +217,7 @@ const Home = () => {
               <div className="gy-6 row">
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape icon-lg border border-primary border-2 fs-3 rounded-circle mb-4 process-line text-primary smooth-shadow-md">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border">
                       1
                     </div>
                     <h3>Click on &#x27;Post a job &#x27;</h3>
@@ -229,7 +229,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape icon-lg border border-primary border-2 fs-3 rounded-circle mb-4 process-line text-primary smooth-shadow-md">
+                    <div className="icon-shape-hiw icon-lg border border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md">
                       2
                     </div>
                     <h3>Select an upgrade if required </h3>
@@ -242,7 +242,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape icon-lg border border-primary border-2 fs-3 rounded-circle mb-4 text-primary smooth-shadow-md">
+                    <div className="icon-shape-hiw icon-lg border border-2 fs-3 rounded-circle mb-4 smooth-shadow-md">
                       3
                     </div>
                     <h3>Purchase the listing </h3>
@@ -257,7 +257,7 @@ const Home = () => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn btn-primary"
+                    className="btn search-button"
                   >
                     Apply Now
                   </a>

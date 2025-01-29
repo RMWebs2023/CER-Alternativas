@@ -1,4 +1,5 @@
 import icon from "../images/favicon_png.png";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Nav = ({ targetRef, targetRefFooter }) => {
   const handleClick = (e) => {
@@ -55,7 +56,8 @@ const Nav = ({ targetRef, targetRefFooter }) => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Servicios
+                Servicios <span></span>
+                <MdKeyboardArrowDown />
               </a>
               <ul className="dropdown-menu">
                 <li>

@@ -37032,7 +37032,7 @@ fieldset:disabled .btn {
   margin-left: 0.375rem;
   border: none;
   font-family: Feather !important;
-  content: "▽";
+  /* content: "▽"; */
   background-repeat: no-repeat;
   background-size: 0.625rem 0.625rem;
   float: right;
@@ -45303,4 +45303,17 @@ a.fc-event:hover {
 
 .nav-link:hover {
   color: #6f42c1 !important;
+}
+
+.icon-shape-hiw {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  color: #6f42c1;
+}
+
+.border {
+  border-color: #6f42c1 !important;
 }

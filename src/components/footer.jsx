@@ -1,12 +1,14 @@
+import logo from "../images/favicon_png.png"
+
 const Footer = () => {
   return (
-    <footer className="pt-lg-10 pt-5 footer bg-white">
+    <footer className="pt-lg-10 pt-5 footer bg-color">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="mb-4">
+            <div className="mb-4 text-light">
               <img
-                src="/images/brand/logo/logo.svg"
+                src={logo}
                 alt=""
                 className="logo-inverse"
               />
@@ -36,13 +38,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-6 offset-lg-1">
+          <div className="col-lg-2 col-md-3 col-sm-6 offset-lg-1 text-light">
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Company</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     About
@@ -50,7 +52,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Pricing
@@ -58,7 +60,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Blog
@@ -66,7 +68,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Careers
@@ -74,7 +76,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Contact
@@ -83,13 +85,13 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-6">
+          <div className="col-lg-2 col-md-3 col-sm-6 text-light">
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Support</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Help and Support
@@ -97,7 +99,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Become Instructor
@@ -105,7 +107,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Get the app
@@ -113,7 +115,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     FAQ’s
@@ -121,7 +123,7 @@ const Footer = () => {
                 </li>
                 <li className=" ">
                   <a
-                    className="nav-link"
+                    className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
                     Tutorial
@@ -130,20 +132,20 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-3 col-md-12 col-sm-12">
+          <div className="col-lg-3 col-md-12 col-sm-12 text-light">
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Get in touch</h3>
               <p>339 McDermott Points Hettingerhaven, NV 15283</p>
               <p className="mb-1">
                 Email:{" "}
-                <a href="/marketing/landings/landing-job#">
+                <a href="/marketing/landings/landing-job#" className="text-light">
                   support@geeksui.com
                 </a>
               </p>
               <p>
                 Phone:
                 {/*  */}
-                <span className="text-dark fw-semi-bold">
+                <span className="text-light fw-semi-bold">
                   (000) 123 456 789
                 </span>
               </p>
@@ -166,7 +168,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="align-items-center g-0 border-top py-2 mt-6 row">
+        <div className="align-items-center g-0 border-top py-2 mt-6 row text-light">
           <div className="col-lg-4 col-md-5 col-sm-12">
             <span>
               © 2024
@@ -177,24 +179,24 @@ const Footer = () => {
           <div className="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">
             <nav className="nav nav-footer">
               <a
-                className="nav-link ps-0"
+                className="nav-link text-light ps-0"
                 href="/marketing/landings/landing-job#"
               >
                 Privacy Policy
               </a>
               <a
-                className="nav-link px-2 px-md-3"
+                className="nav-link text-light px-2 px-md-3"
                 href="/marketing/landings/landing-job#"
               >
                 Cookie Notice
               </a>
               <a
-                className="nav-link d-none d-lg-block"
+                className="nav-link text-light d-none d-lg-block"
                 href="/marketing/landings/landing-job#"
               >
                 Do Not Sell My Personal Information
               </a>
-              <a className="nav-link" href="/marketing/landings/landing-job#">
+              <a className="nav-link text-light" href="/marketing/landings/landing-job#">
                 Terms of Use
               </a>
             </nav>

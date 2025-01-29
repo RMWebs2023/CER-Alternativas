@@ -58,6 +58,7 @@ const Home = () => {
 
   return (
     <main>
+      {/* Navbar */}
       <Nav targetRef={targetRef} targetRefFooter={targetRefFooter} />
       {/* Primera parte del index */}
       <section className="bg-dark py-lg-14 py-12 bg-cover text-light">
@@ -793,6 +794,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Footer */}
       <Footer />
     </main>
   );

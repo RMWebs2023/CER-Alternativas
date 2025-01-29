@@ -45338,3 +45338,15 @@ a.fc-event:hover {
 .border-hiw {
   border: 1px solid #6f42c1 !important;
 }
+
+.button-search-com {
+  background-color: transparent !important;
+  border: solid 2px !important;
+  border-color: #6f42c1 !important;
+  color: #6f42c1 !important;
+}
+
+.button-search-com:hover {
+  background-color: #6f42c1 !important;
+  color: white !important;
+}

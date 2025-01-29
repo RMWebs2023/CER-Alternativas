@@ -9,6 +9,7 @@ import airbnb from "../images/airbnb.png";
 import discord from "../images/discord.png";
 import booking from "../images/booking.png";
 import pinterest from "../images/pinterest.png";
+import testimonio from "../images/testimonios.jpg"
 
 const Home = () => {
   const [titleJob, setTitleJob] = useState("");
@@ -619,13 +620,13 @@ const Home = () => {
         </div>
       </section>
       {/* Testimonios */}
-      <section className="py-lg-16 bg-white pt-8 pb-10">
+      <section className="py-lg-16 color-grey text-light pt-8 pb-10">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
               <div className="text-center row">
                 <div className="px-md-16 mb-8 mt-6 col-md-12">
-                  <span className="text-uppercase text-primary fw-semi-bold ls-md">
+                  <span className="text-uppercase color fw-semi-bold ls-md">
                     Customer stories
                   </span>
                   <h2 className="h1 fw-bold mt-3  mb-2">
@@ -653,7 +654,7 @@ const Home = () => {
                 <div className="col-lg-5 col-md-12 col-12">
                   <div>
                     <img
-                      src="/images/background/case-study-img-1.jpg"
+                      src={testimonio}
                       alt=""
                       className="img-fluid rounded-3 w-100"
                     />
@@ -666,7 +667,7 @@ const Home = () => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="mt-lg-2 mt-4 btn btn-outline-primary"
+                    className="mt-lg-2 mt-4 btn button-search-com"
                   >
                     View All Stories
                   </a>

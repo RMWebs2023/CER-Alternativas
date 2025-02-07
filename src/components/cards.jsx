@@ -5,10 +5,14 @@ import { PiSuitcaseSimpleBold } from "react-icons/pi";
 import { FaRegClock } from "react-icons/fa";
 import logo from "../images/favicon.png";
 
-const Cards = ({ data }) => {
+const Cards = ({ data, theme }) => {
   return (
     <>
-      <section className="py-lg-12 pb-8 bg-dark text-light">
+      <section
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-md-12 col-12 offset-xl-2">
@@ -23,7 +27,9 @@ const Cards = ({ data }) => {
 
               {data.map((item) => (
                 <div
-                  className="card-bordered mb-4 card-hover cursor-pointer card color-grey text-light"
+                  className={`container text-center mt-5 bg-${theme} text-${
+                    theme === "light" ? "dark" : "light"
+                  } card-bordered mb-4 card-hover cursor-pointer card color-grey`}
                   key={item.id}
                 >
                   <div className="card-body">
@@ -41,7 +47,9 @@ const Cards = ({ data }) => {
                             <div>
                               <h3 className="mb-1 fs-4">
                                 <a
-                                  className="text-inherit me-1 text-light text-format"
+                                  className={`text-inherit me-1 text-${
+                                    theme === "light" ? "dark" : "light"
+                                  } text-format`}
                                   href="/marketing/jobs/helpdesk-software-engineer-web3crypto"
                                 >
                                   {item.name}

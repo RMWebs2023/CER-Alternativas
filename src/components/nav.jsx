@@ -1,7 +1,7 @@
 import icon from "../images/favicon_png.png";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const Nav = ({ targetRef, targetRefFooter }) => {
+const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
   const handleClick = (e) => {
     e.preventDefault;
     targetRef.current.scrollIntoView({ behavior: "smooth" });
@@ -10,7 +10,7 @@ const Nav = ({ targetRef, targetRefFooter }) => {
   const handleClickFooter = (e) => {
     e.preventDefault;
     targetRefFooter.current.scrollIntoView({ behavior: "smooth" });
-  }
+  };
 
   return (
     <nav
@@ -83,7 +83,12 @@ const Nav = ({ targetRef, targetRefFooter }) => {
               </ul>
             </li>
             <li className="nav-item">
-              <a ref={targetRef} className="nav-link" href="#" onClick={handleClick}>
+              <a
+                ref={targetRef}
+                className="nav-link"
+                href="#"
+                onClick={handleClick}
+              >
                 Búsquedas activas
               </a>
             </li>
@@ -102,6 +107,12 @@ const Nav = ({ targetRef, targetRefFooter }) => {
                 Contáctanos
               </a>
             </li>
+
+            {/* Ponlo bonito Willy */}
+            <button className="btn btn-primary mt-3" onClick={toggleTheme}>
+              Cambiar a {theme === "light" ? "Dark" : "Light"} Mode
+            </button>
+            
           </ul>
         </div>
       </div>

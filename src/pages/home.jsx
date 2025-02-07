@@ -9,9 +9,9 @@ import airbnb from "../images/airbnb.png";
 import discord from "../images/discord.png";
 import booking from "../images/booking.png";
 import pinterest from "../images/pinterest.png";
-import testimonio from "../images/testimonios.jpg"
+import testimonio from "../images/testimonios.jpg";
 
-const Home = () => {
+const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
   const [searchJob, setSearchJob] = useState("");
   const [data, setData] = useState(offers);
@@ -59,9 +59,19 @@ const Home = () => {
   return (
     <main>
       {/* Navbar */}
-      <Nav targetRef={targetRef} targetRefFooter={targetRefFooter} />
+      <Nav
+        targetRef={targetRef}
+        targetRefFooter={targetRefFooter}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      />
       {/* Primera parte del index */}
-      <section className="bg-dark py-lg-14 py-12 bg-cover text-light">
+
+      <section
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="align-items-center row">
             {/* Buscador */}
@@ -142,17 +152,6 @@ const Home = () => {
                       </form>
                     </div>
                   </div>
-                  <span className=" fs-4">
-                    Currently listing: <span> </span>
-                    {/* */}
-                    30,642 <span> </span>
-                    {/* */}
-                    jobs from <span> </span>
-                    {/* */}
-                    5,717 <span> </span>
-                    {/* */}
-                    companies
-                  </span>
                 </div>
               </div>
             </div>
@@ -166,10 +165,18 @@ const Home = () => {
         </div>
       </section>
       {/* Marcas con las que se trabaja */}
-      <section ref={targetRef} className="py-8 color-grey">
+      <section
+        ref={targetRef}
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
-            <div className="col-xl-10 col-sm-12 offset-xl-1">
+            <div
+              className="col-xl-10 col-sm-12 offset-xl-1"
+              style={theme === "light" ? { filter: "invert(1)" } : {}}
+            >
               <div className="text-center row">
                 <div className="col">
                   <div className="mb-3 mt-3">
@@ -202,9 +209,13 @@ const Home = () => {
         </div>
       </section>
       {/* Oferta laborales */}
-      <Cards data={data} />
+      <Cards data={data} targetRefFooter={targetRefFooter} theme={theme} />
       {/* How it works */}
-      <section className="py-lg-14 pt-8 py-10 color-grey text-light">
+      <section
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
@@ -270,7 +281,11 @@ const Home = () => {
         </div>
       </section>
       {/* Filtro por roles */}
-      <section className="py-lg-14 bg-dark text-light pt-8 pb-10">
+      <section
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
@@ -621,7 +636,11 @@ const Home = () => {
         </div>
       </section>
       {/* Testimonios */}
-      <section className="py-lg-16 color-grey text-light pt-8 pb-10">
+      <section
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
@@ -679,7 +698,12 @@ const Home = () => {
         </div>
       </section>
       {/* Top de empresas contratando */}
-      <section ref={targetRefFooter} className="py-lg-14 bg-dark text-light pt-8 pb-10">
+      <section
+        ref={targetRefFooter}
+        className={`container text-center mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
@@ -699,7 +723,11 @@ const Home = () => {
               <div className="gy-4 row">
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body color-grey text-light">
+                    <div
+                      className={`card-body bg-${theme} text-${
+                        theme === "light" ? "dark" : "light"
+                      }`}
+                    >
                       <img
                         src="/images/job/job-company-logo-a.svg"
                         alt=""
@@ -710,7 +738,13 @@ const Home = () => {
                         <p className="mb-0">Worlds largest Internet Company</p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-light">4240+</span>
+                        <span
+                          className={`fw-semi-bold text-${
+                            theme === "light" ? "dark" : "light"
+                          }`}
+                        >
+                          4240+
+                        </span>
                         Job Posting
                       </p>
                     </div>
@@ -718,7 +752,11 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body color-grey text-light">
+                    <div
+                      className={`card-body bg-${theme} text-${
+                        theme === "light" ? "dark" : "light"
+                      }`}
+                    >
                       <img
                         src="/images/job/job-company-logo-g.svg"
                         alt=""
@@ -731,7 +769,13 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-light">216+</span>
+                        <span
+                          className={`fw-semi-bold text-${
+                            theme === "light" ? "dark" : "light"
+                          }`}
+                        >
+                          216+
+                        </span>
                         Job Posting
                       </p>
                     </div>
@@ -739,7 +783,11 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body color-grey text-light">
+                    <div
+                      className={`card-body bg-${theme} text-${
+                        theme === "light" ? "dark" : "light"
+                      }`}
+                    >
                       <img
                         src="/images/job/job-company-logo-l.svg"
                         alt=""
@@ -752,7 +800,13 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-light">195+</span>
+                        <span
+                          className={`fw-semi-bold text-${
+                            theme === "light" ? "dark" : "light"
+                          }`}
+                        >
+                          195+
+                        </span>
                         Job Posting
                       </p>
                     </div>
@@ -760,7 +814,11 @@ const Home = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="card-bordered card-hover h-100 card">
-                    <div className="card-body color-grey text-light">
+                    <div
+                      className={`card-body bg-${theme} text-${
+                        theme === "light" ? "dark" : "light"
+                      }`}
+                    >
                       <img
                         src="/images/job/job-company-logo-p.svg"
                         alt=""
@@ -773,7 +831,13 @@ const Home = () => {
                         </p>
                       </div>
                       <p className="mb-0">
-                        <span className="fw-semi-bold text-light">180+</span>
+                        <span
+                          className={`fw-semi-bold text-${
+                            theme === "light" ? "dark" : "light"
+                          }`}
+                        >
+                          180+
+                        </span>
                         Job Posting
                       </p>
                     </div>

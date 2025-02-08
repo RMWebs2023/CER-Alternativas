@@ -1,4 +1,5 @@
 import logo from "../images/favicon_png.png"
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,13 +11,13 @@ const Footer = () => {
               <img
                 src={logo}
                 alt=""
-                className="logo-inverse"
+                className="logo-footer"
               />
               <div className="mt-4">
                 <p>
-                  Geek is feature-rich components and beautifully Bootstrap
-                  UIKit for developers, built with bootstrap responsive
-                  framework.
+                  Surge de la unión entre CER Hoteles Revenue Management y Alternativas Laborales. Somos profesionales con amplia experiencia en hotelería y turismo, comprometidas con tu crecimiento profesional.
+                  <br /> <br />
+                  Te conectamos con oportunidades de prácticas rentadas en el exterior y te acompañamos en todo el proceso, desde la postulación hasta tu desempeño laboral. ¡Impulsa tu carrera con nosotros!
                 </p>
                 {/* <div className="fs-4 mt-4">
                                 <a className="mdi mdi-facebook text-muted me-2" href="/marketing/landings/landing-job#">
@@ -47,7 +48,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    About
+                    Home
                   </a>
                 </li>
                 <li className=" ">
@@ -55,7 +56,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Pricing
+                    Servicios
                   </a>
                 </li>
                 <li className=" ">
@@ -63,7 +64,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Blog
+                    Busquedas activas
                   </a>
                 </li>
                 <li className=" ">
@@ -71,7 +72,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Careers
+                    Pasantias rentadas en el exterior
                   </a>
                 </li>
                 <li className=" ">
@@ -79,7 +80,15 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Contact
+                    Pasantias rentadas en Argentina
+                  </a>
+                </li>
+                <li className=" ">
+                  <a
+                    className="nav-link text-light"
+                    href="/marketing/landings/landing-job#"
+                  >
+                    Contacto
                   </a>
                 </li>
               </ul>
@@ -87,14 +96,14 @@ const Footer = () => {
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 text-light">
             <div className="mb-4">
-              <h3 className="fw-bold mb-3">Support</h3>
+              <h3 className="fw-bold mb-3">CER Alternativas</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
                 <li className=" ">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Help and Support
+                    Sobre nosotros
                   </a>
                 </li>
                 <li className=" ">
@@ -102,7 +111,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Become Instructor
+                    Envianos tu CV!
                   </a>
                 </li>
                 <li className=" ">
@@ -110,7 +119,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Get the app
+                    Armamos tu cv
                   </a>
                 </li>
                 <li className=" ">
@@ -126,7 +135,15 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Tutorial
+                    Preparamos entrevistas
+                  </a>
+                </li>
+                <li className=" ">
+                  <a
+                    className="nav-link text-light"
+                    href="/marketing/landings/landing-job#"
+                  >
+                    Tramites de visa de trabajo
                   </a>
                 </li>
               </ul>
@@ -171,9 +188,9 @@ const Footer = () => {
         <div className="align-items-center g-0 border-top py-2 mt-6 row text-light">
           <div className="col-lg-4 col-md-5 col-sm-12">
             <span>
-              © 2024
+              © 2025
               {/*  */}
-              Geeks-UI, Inc. All Rights Reserved
+              RWbs, All Rights Reserved
             </span>
           </div>
           <div className="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">
@@ -206,24 +223,10 @@ const Footer = () => {
       <a
         target="_blank"
         className="btn btn-dark btn-float-button m-5 fs-4"
-        href="https://themes.getbootstrap.com/product/geeks-admin-dashboard-template-react/"
+        href="https://api.whatsapp.com/send?phone=5491153103878"
       >
-        {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-share">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-                <path d="M12.5 17h-6.5v-14h-2"></path>
-                <path d="M6 5l14 1l-1 7h-13"></path>
-                <path d="M16 22l5 -5"></path>
-                <path d="M21 21.5v-4.5h-4.5"></path>
-            </svg> */}
-        {/* */}
-        {/* Buy Now */}
+        <FaWhatsapp />
       </a>
-      {/* <div className="btn-scroll-top active-progress">
-            <svg className="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
-                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" style="transition:stroke-dashoffset 10ms linear;stroke-dasharray:139.989, 139.989;stroke-dashoffset:80.7035"></path>
-            </svg>
-        </div> */}
     </footer>
   );
 };

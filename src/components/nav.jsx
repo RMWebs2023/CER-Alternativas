@@ -1,5 +1,6 @@
 import icon from "../images/favicon_png.png";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { IoInvertModeOutline } from "react-icons/io5";
 
 const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
   const handleClick = (e) => {
@@ -109,8 +110,8 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
             </li>
 
             {/* Ponlo bonito Willy */}
-            <button className="btn btn-primary mt-3" onClick={toggleTheme}>
-              Cambiar a {theme === "light" ? "Dark" : "Light"} Mode
+            <button className="btn-mode" onClick={toggleTheme}>
+              <IoInvertModeOutline /> {theme === "light" ? "Dark" : "Light"}
             </button>
             
           </ul>

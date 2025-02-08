@@ -45366,3 +45366,11 @@ a.fc-event:hover {
 .bg-color {
   background-color: #6f42c1 !important;
 }
+
+.btn-mode {
+  background-color: transparent;
+  width: 30px;
+  height: 25px;
+  border-radius: 100%;
+  border-color: transparent;
+}

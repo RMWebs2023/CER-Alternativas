@@ -13,16 +13,19 @@ const Cards = ({ data, theme }) => {
           theme === "light" ? "dark" : "light"
         }`}
       >
-        <div className="container">
+        <div className="container cards">
           <div className="row">
             <div className="col-xl-8 col-md-12 col-12 offset-xl-2">
               <div className="text-center mb-8">
                 <span className="text-uppercase fw-semi-bold ls-md color">
                   Últimas ofertas
                 </span>
-                <h2 className="h1 fw-bold mt-3">
-                  Explora nuestras ofertas laborales
+                <h2 className="h2 fw-bold mt-3">
+                TU EXPERIENCIA EN HOTELERIA Y TURISMO ESTA A UN CLICK DE DISTANCIA
                 </h2>
+                <h3 className="h3 fw-bold mt-3">
+                  Aplica a tu proxima experiencia en el exterior
+                </h3>
               </div>
 
               {data.map((item) => (
@@ -95,6 +98,16 @@ const Cards = ({ data, theme }) => {
                   </div>
                 </div>
               ))}
+              <div className="text-center mb-8">
+                <span className="text-uppercase fw-semi-bold ls-md color">
+                  ¡¡Oportunidad!!
+                </span>
+                <p className="p fw-bold mt-3">
+                  Según tu perfil, te acercamos oportunidades laborales de vacantes disponibles para
+                  que puedas aplicar a diferentes puestos de trabajo, en el marco de práctica profesional
+                  rentada. <br /> <br /> Ofrecemos asesoría desde el inicio del proceso y durante tu desempeño.
+                </p>
+              </div>
             </div>
           </div>
         </div>

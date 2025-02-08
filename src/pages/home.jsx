@@ -704,7 +704,7 @@ const Home = ({ theme, toggleTheme }) => {
           theme === "light" ? "dark" : "light"
         }`}
       >
-        <div className="container">
+        <div className="container companies">
           <div className="row">
             <div className="col-xl-10 col-md-12 col-12 offset-xl-1">
               <div className="text-center row">

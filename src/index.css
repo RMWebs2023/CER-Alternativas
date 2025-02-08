@@ -45265,6 +45265,7 @@ a.fc-event:hover {
 
 .color { 
   color: #6f42c1 !important;
+  padding-top: 0px;
 }
 
 .new {
@@ -45369,8 +45370,15 @@ a.fc-event:hover {
 
 .btn-mode {
   background-color: transparent;
-  width: 30px;
-  height: 25px;
-  border-radius: 100%;
+  width: 100px;
+  height: 30px;
   border-color: transparent;
+}
+
+.cards {
+  padding-top: 40px;
+}
+
+.companies {
+  padding-bottom: 40px;
 }

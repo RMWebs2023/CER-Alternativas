@@ -13,6 +13,23 @@ import testimonio from "../images/testimonios.jpg";
 import usa from "../images/usa.jpg";
 import crucero from "../images/crucero.jpg";
 import training from "../images/training.jpg";
+import { LuGraduationCap } from "react-icons/lu";
+import { HiOutlineLanguage } from "react-icons/hi2";
+import { GrUserExpert } from "react-icons/gr";
+import { FaPassport } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
+import { SlPeople } from "react-icons/sl";
+import { FaPenAlt } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
+import { GrDocumentVerified } from "react-icons/gr";
+import { BsCalendarCheck } from "react-icons/bs";
+import { IoTicketOutline } from "react-icons/io5";
+import { GiPassport } from "react-icons/gi";
+import { LuTicketsPlane } from "react-icons/lu";
+import { FaHandHoldingMedical } from "react-icons/fa";
+import { BiTrip } from "react-icons/bi";
+import { BiLike } from "react-icons/bi";
+
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -262,47 +279,221 @@ const Home = ({ theme, toggleTheme }) => {
               <div className="text-center row">
                 <div className="px-lg-10 mb-8 mt-6 col-md-12">
                   <span className="text-uppercase fw-semi-bold ls-md color">
-                    Process
+                    Proceso
                   </span>
-                  <h2 className="h1 fw-bold mt-3">How It Works</h2>
+                  <h2 className="h1 fw-bold mt-3">ETAPAS DEL PROGRAMA</h2>
+                  <ul>
+                    <li className="steps-li">
+                      <LuGraduationCap className="steps-icons" /> <span> </span>
+                      Graduados o estudiantes del último año de la carrera de Hotelería y/o Turismo
+                    </li>
+                    <li className="steps-li">
+                      <HiOutlineLanguage className="steps-icons" /> <span> </span>
+                      Nivel avanzado de inglés
+                    </li>
+                    <li className="steps-li">
+                      <GrUserExpert className="steps-icons" />
+                      Experiencia de al menos 1 año en el rubro hotelero/Turismo
+                    </li>
+                    <li className="steps-li">
+                      <FaPassport className="steps-icons" /> <span> </span>
+                      Pasaporte y Visa vigentes
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div className="gy-6 row">
+              <div className="gy-4 row">
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
-                      1
+                      <TbFileCv />
                     </div>
-                    <h3>Click on &#x27;Post a job &#x27;</h3>
-                    <p className="mb-0 px-4">
+                    <h3>Envio el CV a la agencia</h3>
+                    {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
-                      2
+                      <SlPeople />
                     </div>
-                    <h3>Select an upgrade if required </h3>
-                    <p className="mb-0 px-2">
+                    <h3>Me citan a entrevista presencial o por Skype</h3>
+                    {/* <p className="mb-0 px-2">
                       The base price for a job listing on Geeks is $29 per
                       month. Choose one of our optional upgrades to gain more
                       visibility to your listing.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
-                      3
+                      <FaPenAlt />
                     </div>
-                    <h3>Purchase the listing </h3>
-                    <p className="mb-0 px-3">
+                    <h3>Me inscribo al programa</h3>
+                    {/* <p className="mb-0 px-3">
                       Preview your listing and once you are ready to post it you
                       can add your billing information.
-                    </p>
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <SlPeople />
+                    </div>
+                    <h3>Entrevista con el corresponsal en el exterior</h3>
+                    {/* <p className="mb-0 px-1">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <MdAttachMoney />
+                    </div>
+                    <h3>Pago de la confirmacion</h3>
+                    {/* <p className="mb-0 px-2">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                      <GrDocumentVerified />
+                    </div>
+                    <h3>Reformulacion del CV para presentar en el exterior</h3>
+                    {/* <p className="mb-0 px-3">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <BsCalendarCheck />
+                    </div>
+                    <h3>Disponibilidad de viaje</h3>
+                    {/* <p className="mb-0 px-1">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <SlPeople />
+                    </div>
+                    <h3>Entrevista con el empleador - Host Company</h3>
+                    {/* <p className="mb-0 px-2">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                      <IoTicketOutline />
+                    </div>
+                    <h3>Emision de la oferta de pasantia o trabajo</h3>
+                    {/* <p className="mb-0 px-3">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <MdAttachMoney />
+                    </div>
+                    <h3>Pago del saldo del programa</h3>
+                    {/* <p className="mb-0 px-1">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <SlPeople />
+                    </div>
+                    <h3>Entrevista con sponsor</h3>
+                    {/* <p className="mb-0 px-2">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                      <GiPassport />
+                    </div>
+                    <h3>Tramitacion de Visa</h3>
+                    {/* <p className="mb-0 px-3">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <LuTicketsPlane />
+                    </div>
+                    <h3>Emision del pasaje aereo</h3>
+                    {/* <p className="mb-0 px-1">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                      <FaHandHoldingMedical />
+                    </div>
+                    <h3>Seguro medico</h3>
+                    {/* <p className="mb-0 px-2">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                      <BiTrip />
+                    </div>
+                    <h3>Traslado al pais de destino</h3>
+                    {/* <p className="mb-0 px-3">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
+                  </div>
+                </div>
+                <div className="col-md-12 col-sm-12">
+                  <div className=" text-center">
+                    <div className="icon-shape-hiw icon-xxl border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                      <BiLike className="last-icon" />
+                    </div>
+                    <h3>COMIENZA LA EXPERIENCIA!!</h3>
+                    {/* <p className="mb-0 px-1">
+                      Fill in the details of the job be sure to include your
+                      location restrictions if you have em!
+                    </p> */}
                   </div>
                 </div>
                 <div className="mt-8 text-center col-sm-12">

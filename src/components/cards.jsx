@@ -51,7 +51,7 @@ const Cards = ({ data, theme }) => {
     formDataEmail.append("cv_file", formData.cv);
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formDataEmail, "YOUR_USER_ID")
+      .sendForm("service_gfyy33r", "template_mh1kflu", formDataEmail, "5JPVjN0ZH-C24tTVE")
       .then(
         (response) => {
           alert("Tu solicitud ha sido enviada correctamente.");

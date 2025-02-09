@@ -45329,6 +45329,7 @@ a.fc-event:hover {
   border: solid 2px !important;
   border-color: #6f42c1 !important;
   color: white !important;
+  margin-bottom: 15px !important;
 }
 
 .button-rwbs:hover {
@@ -45370,4 +45371,21 @@ a.fc-event:hover {
 .body-card {
   min-height: 230px !important;
   align-content: space-around !important;
+}
+
+.apply {
+  padding-bottom: 15px;
+}
+
+.steps-li {
+  list-style: none;
+}
+
+.steps-icons{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.last-icon {
+  font-size: 50px;
 }

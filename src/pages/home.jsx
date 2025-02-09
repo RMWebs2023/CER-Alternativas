@@ -4,12 +4,15 @@ import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 import vector from "../images/vector1.png";
-import stripe from "../images/stripe.png";
-import airbnb from "../images/airbnb.png";
-import discord from "../images/discord.png";
-import booking from "../images/booking.png";
-import pinterest from "../images/pinterest.png";
+// import stripe from "../images/stripe.png";
+// import airbnb from "../images/airbnb.png";
+// import discord from "../images/discord.png";
+// import booking from "../images/booking.png";
+// import pinterest from "../images/pinterest.png";
 import testimonio from "../images/testimonios.jpg";
+import usa from "../images/usa.jpg";
+import crucero from "../images/crucero.jpg";
+import training from "../images/training.jpg";
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -164,7 +167,7 @@ const Home = ({ theme, toggleTheme }) => {
           </div>
         </div>
       </section>
-      {/* Marcas con las que se trabaja */}
+      {/* Programas */}
       <section
         ref={targetRef}
         className={`container text-center mt-5 bg-${theme} text-${
@@ -172,39 +175,76 @@ const Home = ({ theme, toggleTheme }) => {
         }`}
       >
         <div className="container">
-          <div className="row">
-            <div
-              className="col-xl-10 col-sm-12 offset-xl-1"
-              style={theme === "light" ? { filter: "invert(1)" } : {}}
-            >
-              <div className="text-center row">
-                <div className="col">
-                  <div className="mb-3 mt-3">
-                    <img src={stripe} alt="" className="img-index" />
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="mb-3 mt-3">
-                    <img src={airbnb} alt="" className="img-index" />
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="mb-3 mt-3">
-                    <img src={discord} alt="" className="img-index" />
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="mb-3 mt-3">
-                    <img src={booking} alt="" className="img-index" />
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="mb-3 mt-3">
-                    <img src={pinterest} alt="" className="img-index" />
-                  </div>
+          <div
+            className="row programs"
+            style={theme === "light" ? { filter: "invert(0)" } : {}}
+          >
+            <div className="text-center row">
+              <div className="px-lg-10 mb-8 mt-6 col-md-12">
+                <span className="text-uppercase fw-semi-bold ls-md color">
+                  Oportunidades
+                </span>
+                <h2 className="h1 fw-bold mt-3">Programas</h2>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card">
+                <img src={usa} class="card-img-top" alt="..." />
+                <div class="card-body body-card">
+                  <h5 class="card-title">Work & Travel y Pasantías rentadas en hoteles de Caribe y EE.UU</h5>
+                  <p class="card-text">Vive una experiencia internacional trabajando en hoteles de primer nivel mientras mejoras tus habilidades y conoces nuevas culturas.</p>
+                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
                 </div>
               </div>
             </div>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card">
+                <img src={crucero} class="card-img-top" alt="..." />
+                <div class="card-body body-card">
+                  <h5 class="card-title">Trabajá en Cruceros!</h5>
+                  <p class="card-text">Embarcate en una aventura única trabajando a bordo de cruceros y recorriendo el mundo mientras desarrollas tu carrera en hospitalidad.</p>
+                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card">
+                <img src={training} class="card-img-top" alt="..." />
+                <div class="card-body body-card">
+                  <h5 class="card-title">Training en Gerenciamiento hotelero</h5>
+                  <p class="card-text">Capacítate con expertos en gestión hotelera y adquiere experiencia en la administración de hoteles de prestigio a nivel internacional.</p>
+                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
+                </div>
+              </div>
+            </div>
+            {/* Apartado con logos de empresas contratantes */}
+            {/* <div className="text-center row">
+              <div className="col">
+                <div className="mb-3 mt-3">
+                  <img src={stripe} alt="" className="img-index" />
+                </div>
+              </div>
+              <div className="col">
+                <div className="mb-3 mt-3">
+                  <img src={airbnb} alt="" className="img-index" />
+                </div>
+              </div>
+              <div className="col">
+                <div className="mb-3 mt-3">
+                  <img src={discord} alt="" className="img-index" />
+                </div>
+              </div>
+              <div className="col">
+                <div className="mb-3 mt-3">
+                  <img src={booking} alt="" className="img-index" />
+                </div>
+              </div>
+              <div className="col">
+                <div className="mb-3 mt-3">
+                  <img src={pinterest} alt="" className="img-index" />
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -270,7 +310,7 @@ const Home = ({ theme, toggleTheme }) => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn search-button"
+                    className="btn button-rwbs"
                   >
                     Apply Now
                   </a>
@@ -625,7 +665,7 @@ const Home = ({ theme, toggleTheme }) => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn button-search-cat"
+                    className="btn button-rwbs"
                   >
                     View All Category
                   </a>
@@ -687,7 +727,7 @@ const Home = ({ theme, toggleTheme }) => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="mt-lg-2 mt-4 btn button-search-com"
+                    className="mt-lg-2 mt-4 btn button-rwbs"
                   >
                     View All Stories
                   </a>
@@ -848,7 +888,7 @@ const Home = ({ theme, toggleTheme }) => {
                     role="button"
                     tabIndex="0"
                     href="#"
-                    className="btn button-search-company"
+                    className="btn button-rwbs"
                   >
                     View All Companies
                   </a>

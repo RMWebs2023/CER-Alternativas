@@ -45324,44 +45324,20 @@ a.fc-event:hover {
   color: #6f42c1;
 }
 
-.button-search-cat {
-  background-color: transparent !important;
+.button-rwbs {
+  background-color: #6f42c1 !important;
   border: solid 2px !important;
   border-color: #6f42c1 !important;
-  color: #6f42c1 !important;
+  color: white !important;
 }
 
-.button-search-cat:hover {
-  background-color: #6f42c1 !important;
+.button-rwbs:hover {
+  background-color: #4b2d86 !important;
   color: white !important;
 }
 
 .border-hiw {
   border: 1px solid #6f42c1 !important;
-}
-
-.button-search-com {
-  background-color: transparent !important;
-  border: solid 2px !important;
-  border-color: #6f42c1 !important;
-  color: #6f42c1 !important;
-}
-
-.button-search-com:hover {
-  background-color: #6f42c1 !important;
-  color: white !important;
-}
-
-.button-search-company {
-  background-color: transparent !important;
-  border: solid 2px !important;
-  border-color: #6f42c1 !important;
-  color: #6f42c1 !important;
-}
-
-.button-search-company:hover {
-  background-color: #6f42c1 !important;
-  color: white !important;
 }
 
 .bg-color {
@@ -45383,6 +45359,15 @@ a.fc-event:hover {
   padding-bottom: 40px;
 }
 
+.programs {
+  padding-bottom: 40px;
+}
+
 .logo-footer {
   width: 150px;
+}
+
+.body-card {
+  min-height: 230px !important;
+  align-content: space-around !important;
 }

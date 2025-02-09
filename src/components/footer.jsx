@@ -152,11 +152,11 @@ const Footer = () => {
           <div className="col-lg-3 col-md-12 col-sm-12 text-light">
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Get in touch</h3>
-              <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+              <p>Dirección Av. Del Libertador 7766</p>
               <p className="mb-1">
                 Email:{" "}
                 <a href="/marketing/landings/landing-job#" className="text-light">
-                  support@geeksui.com
+                  ceralternativas@gmail.com
                 </a>
               </p>
               <p>
@@ -189,7 +189,7 @@ const Footer = () => {
           <div className="col-lg-4 col-md-5 col-sm-12">
             <span>
               © 2025
-              {/*  */}
+              <span> </span>
               RWbs, All Rights Reserved
             </span>
           </div>

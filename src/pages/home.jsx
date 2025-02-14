@@ -282,7 +282,10 @@ const Home = ({ theme, toggleTheme }) => {
                     Proceso
                   </span>
                   <h2 className="h1 fw-bold mt-3">ETAPAS DEL PROGRAMA</h2>
-                  <ul>
+                  <span className="text-uppercase fw-semi-bold ls-md color">
+                    Requisitos
+                  </span>
+                  <ul className="steps-ul">
                     <li className="steps-li">
                       <LuGraduationCap className="steps-icons" /> <span> </span>
                       Graduados o estudiantes del último año de la carrera de Hotelería y/o Turismo

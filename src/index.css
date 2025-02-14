@@ -45389,3 +45389,7 @@ a.fc-event:hover {
 .last-icon {
   font-size: 50px;
 }
+
+.steps-ul {
+  margin-top: 15px !important;
+}

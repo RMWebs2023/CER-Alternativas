@@ -1,23 +1,38 @@
-import logo from "../images/favicon_png.png"
+import { useState } from "react";
+import logo from "../images/favicon_png.png";
+import dani from "../images/PERFILDANI.jpeg";
+import ceci from "../images/PERFILCECI.jpeg";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <footer className="pt-lg-10 pt-5 footer bg-color">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="mb-4 text-light">
-              <img
-                src={logo}
-                alt=""
-                className="logo-footer"
-              />
+              <img src={logo} alt="" className="logo-footer" />
               <div className="mt-4">
                 <p>
-                  Surge de la unión entre CER Hoteles Revenue Management y Alternativas Laborales. Somos profesionales con amplia experiencia en hotelería y turismo, comprometidas con tu crecimiento profesional.
+                  Surge de la unión entre CER Hoteles Revenue Management y
+                  Alternativas Laborales. Somos profesionales con amplia
+                  experiencia en hotelería y turismo, comprometidas con tu
+                  crecimiento profesional.
                   <br /> <br />
-                  Te conectamos con oportunidades de prácticas rentadas en el exterior y te acompañamos en todo el proceso, desde la postulación hasta tu desempeño laboral. ¡Impulsa tu carrera con nosotros!
+                  Te conectamos con oportunidades de prácticas rentadas en el
+                  exterior y te acompañamos en todo el proceso, desde la
+                  postulación hasta tu desempeño laboral. ¡Impulsa tu carrera
+                  con nosotros!
                 </p>
                 {/* <div className="fs-4 mt-4">
                                 <a className="mdi mdi-facebook text-muted me-2" href="/marketing/landings/landing-job#">
@@ -101,7 +116,11 @@ const Footer = () => {
                 <li className=" ">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="#"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setShowModal(true);
+                    }}
                   >
                     Sobre nosotros
                   </a>
@@ -155,7 +174,10 @@ const Footer = () => {
               <p>Dirección Av. Del Libertador 7766</p>
               <p className="mb-1">
                 Email:{" "}
-                <a href="/marketing/landings/landing-job#" className="text-light">
+                <a
+                  href="/marketing/landings/landing-job#"
+                  className="text-light"
+                >
                   ceralternativas@gmail.com
                 </a>
               </p>
@@ -213,13 +235,96 @@ const Footer = () => {
               >
                 Do Not Sell My Personal Information
               </a>
-              <a className="nav-link text-light" href="/marketing/landings/landing-job#">
+              <a
+                className="nav-link text-light"
+                href="/marketing/landings/landing-job#"
+              >
                 Terms of Use
               </a>
             </nav>
           </div>
         </div>
       </div>
+
+      {showModal && (
+        <div className="modal show d-block" tabIndex="-1">
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">¿Quiénes somos?</h4>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModal}
+                ></button>
+              </div>
+              <div className="modal-body">
+                <div className="row align-items-stretch mb-4">
+                  <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img
+                      src={dani}
+                      className="img-fluid rounded-circle"
+                      alt="Daniela Cerliani"
+                      style={{
+                        width: "150px",
+                        height: "150px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>Daniela Cerliani - Directora de CER Hoteles</h4>
+                    <p>
+                      Con amplia trayectoria en el sector hotelero, hoy su
+                      consultora brinda soluciones orientadas a potenciar
+                      acciones estratégicas para el desarrollo comercial de
+                      propiedades hoteleras, gestionando el Revenue Management,
+                      Marketing Digital y tecnologías e implementando procesos
+                      que conlleven a la mejora de ingresos y volúmenes de
+                      reservas.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="row align-items-stretch">
+                  <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img
+                      src={ceci}
+                      className="img-fluid rounded-circle"
+                      alt="Cecilia Maldonado"
+                      style={{
+                        width: "150px",
+                        height: "150px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-8 d-flex flex-column justify-content-center">
+                    <h4>
+                      Cecilia Maldonado - Directora de bolsa de alternativa
+                      laborales
+                    </h4>
+                    <p>
+                      Tras su experiencia en hotelería y turismo, y su formación
+                      en la docencia hoy desempeña un rol en el marco académico
+                      siendo coordinadora de cursos de la escuela Vatel y
+                      activamente dirigiendo su bolsa de trabajo, en donde
+                      recluta y orienta al aplicante para insertarse en el campo
+                      laboral. Juntas decidimos fusionarnos para diseñar
+                      programas de trabajo en hotelería y turismo y ser nexo
+                      entre las empresas y los aplicantes, sirviendo de apoyo en
+                      el proceso de búsqueda laboral y de pasantías rentadas,
+                      acompañando en su postulación y en el proceso
+                      reclutamiento.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <a
         target="_blank"
         className="btn btn-dark btn-float-button m-5 fs-4"

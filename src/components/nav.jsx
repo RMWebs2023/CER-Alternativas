@@ -112,7 +112,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={handleClick}>
+              <a className="nav-link disabled" href="#" onClick={handleClick} data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
                 Pasantías en Argentina
               </a>
             </li>

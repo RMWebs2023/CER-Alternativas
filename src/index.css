@@ -45393,3 +45393,7 @@ a.fc-event:hover {
 .steps-ul {
   margin-top: 15px !important;
 }
+
+.disabled {
+  color:silver !important;
+}

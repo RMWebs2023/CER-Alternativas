@@ -146,14 +146,6 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    FAQ’s
-                  </a>
-                </li>
-                <li className=" ">
-                  <a
-                    className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
-                  >
                     Preparamos entrevistas
                   </a>
                 </li>

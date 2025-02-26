@@ -311,7 +311,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <TbFileCv />
                     </div>
-                    <h3>Envio el CV a la agencia</h3>
+                    <h4>Envio el CV</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -323,7 +323,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <SlPeople />
                     </div>
-                    <h3>Me citan a entrevista presencial o por Skype</h3>
+                    <h4>Me citan a entrevista</h4>
                     {/* <p className="mb-0 px-2">
                       The base price for a job listing on Geeks is $29 per
                       month. Choose one of our optional upgrades to gain more
@@ -336,7 +336,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <FaPenAlt />
                     </div>
-                    <h3>Me inscribo al programa</h3>
+                    <h4>Me inscribo al programa</h4>
                     {/* <p className="mb-0 px-3">
                       Preview your listing and once you are ready to post it you
                       can add your billing information.
@@ -346,22 +346,10 @@ const Home = ({ theme, toggleTheme }) => {
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
-                      <SlPeople />
-                    </div>
-                    <h3>Entrevista con el corresponsal en el exterior</h3>
-                    {/* <p className="mb-0 px-1">
-                      Fill in the details of the job be sure to include your
-                      location restrictions if you have em!
-                    </p> */}
-                  </div>
-                </div>
-                <div className="col-md-4 col-sm-12">
-                  <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <MdAttachMoney />
                     </div>
-                    <h3>Pago de la confirmacion</h3>
-                    {/* <p className="mb-0 px-2">
+                    <h4>Pago de la confirmacion</h4>
+                    {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
                     </p> */}
@@ -372,20 +360,8 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <GrDocumentVerified />
                     </div>
-                    <h3>Reformulacion del CV para presentar en el exterior</h3>
-                    {/* <p className="mb-0 px-3">
-                      Fill in the details of the job be sure to include your
-                      location restrictions if you have em!
-                    </p> */}
-                  </div>
-                </div>
-                <div className="col-md-4 col-sm-12">
-                  <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
-                      <BsCalendarCheck />
-                    </div>
-                    <h3>Disponibilidad de viaje</h3>
-                    {/* <p className="mb-0 px-1">
+                    <h4>Reformulacion del CV para presentar en el exterior</h4>
+                    {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
                     </p> */}
@@ -396,8 +372,8 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <SlPeople />
                     </div>
-                    <h3>Entrevista con el empleador - Host Company</h3>
-                    {/* <p className="mb-0 px-2">
+                    <h4>Entrevista con el empleador</h4>
+                    {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
                     </p> */}
@@ -408,8 +384,8 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <IoTicketOutline />
                     </div>
-                    <h3>Emision de la oferta de pasantia o trabajo</h3>
-                    {/* <p className="mb-0 px-3">
+                    <h4>Emision de la oferta de pasantia o trabajo</h4>
+                    {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
                     </p> */}
@@ -420,19 +396,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <MdAttachMoney />
                     </div>
-                    <h3>Pago del saldo del programa</h3>
-                    {/* <p className="mb-0 px-1">
-                      Fill in the details of the job be sure to include your
-                      location restrictions if you have em!
-                    </p> */}
-                  </div>
-                </div>
-                <div className="col-md-4 col-sm-12">
-                  <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
-                      <SlPeople />
-                    </div>
-                    <h3>Entrevista con sponsor</h3>
+                    <h4>Pago del saldo del programa</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -444,7 +408,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <GiPassport />
                     </div>
-                    <h3>Tramitacion de Visa</h3>
+                    <h4>Tramitacion de Visa</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -456,7 +420,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <LuTicketsPlane />
                     </div>
-                    <h3>Emision del pasaje aereo</h3>
+                    <h4>Emision del pasaje aereo</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -468,7 +432,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <FaHandHoldingMedical />
                     </div>
-                    <h3>Seguro medico</h3>
+                    <h4>Seguro medico</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -480,7 +444,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <BiTrip />
                     </div>
-                    <h3>Traslado al pais de destino</h3>
+                    <h4>Traslado al pais de destino</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -515,7 +479,7 @@ const Home = ({ theme, toggleTheme }) => {
         </div>
       </section>
       {/* Filtro por roles */}
-      <section
+      {/* <section
         className={`container text-center mt-5 bg-${theme} text-${
           theme === "light" ? "dark" : "light"
         }`}
@@ -868,9 +832,9 @@ const Home = ({ theme, toggleTheme }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Testimonios */}
-      <section
+      {/* <section
         className={`container text-center mt-5 bg-${theme} text-${
           theme === "light" ? "dark" : "light"
         }`}
@@ -930,9 +894,9 @@ const Home = ({ theme, toggleTheme }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Top de empresas contratando */}
-      <section
+      {/* <section
         ref={targetRefFooter}
         className={`container text-center mt-5 bg-${theme} text-${
           theme === "light" ? "dark" : "light"
@@ -1091,7 +1055,7 @@ const Home = ({ theme, toggleTheme }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Footer */}
       <Footer />
     </main>

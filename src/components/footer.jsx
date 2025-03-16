@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../images/favicon_png.png";
+import logo from "../images/favicon_footer.png";
 import dani from "../images/PERFILDANI.jpeg";
 import ceci from "../images/PERFILCECI.jpeg";
 import { FaWhatsapp } from "react-icons/fa";
@@ -65,7 +65,7 @@ const Footer = ({ targetRef }) => {
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Compañía</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -73,7 +73,7 @@ const Footer = ({ targetRef }) => {
                     Home
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -81,7 +81,7 @@ const Footer = ({ targetRef }) => {
                     Servicios
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="#"
@@ -90,7 +90,7 @@ const Footer = ({ targetRef }) => {
                     Busquedas activas
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="#"
@@ -99,13 +99,21 @@ const Footer = ({ targetRef }) => {
                     Pasantias rentadas en el exterior
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="#"
                     onClick={handleClick}
                   >
                     Pasantias rentadas en Argentina
+                  </a>
+                </li>
+                <li className=" ">
+                  <a
+                    className="nav-link text-light"
+                    href="/marketing/landings/landing-job#"
+                  >
+                    Contacto
                   </a>
                 </li>
               </ul>
@@ -115,7 +123,7 @@ const Footer = ({ targetRef }) => {
             <div className="mb-4">
               <h3 className="fw-bold mb-3">CER Alternativas</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="#"
@@ -127,7 +135,7 @@ const Footer = ({ targetRef }) => {
                     Sobre nosotros
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -135,7 +143,7 @@ const Footer = ({ targetRef }) => {
                     Envianos tu CV!
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -143,7 +151,7 @@ const Footer = ({ targetRef }) => {
                     Armamos tu cv en inglés
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -151,7 +159,7 @@ const Footer = ({ targetRef }) => {
                     Preparamos entrevistas
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -324,7 +332,7 @@ const Footer = ({ targetRef }) => {
 
       <a
         target="_blank"
-        className="btn btn-dark btn-float-button m-5 fs-4"
+        className="btn-wsp btn-dark btn-float-button m-5 fs-4"
         href="https://api.whatsapp.com/send?phone=5491153103878"
       >
         <FaWhatsapp />

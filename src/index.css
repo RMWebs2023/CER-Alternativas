@@ -232,12 +232,12 @@
     var(--geeks-bg-opacity)
   ) !important;
 }
-.bg-dark {
+/* .bg-dark {
   background-color: rgba(
     var(--geeks-dark-rgb),
     var(--geeks-bg-opacity)
   ) !important;
-}
+} */
 .bg-white {
   background-color: rgba(
     var(--geeks-white-rgb),
@@ -286,7 +286,7 @@
     var(--geeks-bg-opacity)
   ) !important;
 }
-.bg-dark-primary {
+ .bg-dark-primary {
   background-color: rgba(
     var(--geeks-dark-primary-rgb),
     var(--geeks-bg-opacity)
@@ -23626,12 +23626,12 @@ fieldset:disabled .btn {
 .bg-light {
   background-color: #f1f5f9 !important;
 }
-.bg-dark,
+/* .bg-dark,
 .bg-light {
   --geeks-bg-opacity: 1;
-}
+} */
 .bg-dark {
-  background-color: #0f172a !important;
+  background-color: black !important;
 }
 .bg-white {
   --geeks-bg-opacity: 1;
@@ -35679,7 +35679,7 @@ fieldset:disabled .btn {
   --geeks-navbar-vertical-link-hover: #cbd5e1;
 }
 :root .bg-dark {
-  background-color: #0f172a;
+  background-color: black;
 }
 [data-theme="dark"] {
   --geeks-gray-100: #0b1324;
@@ -36256,7 +36256,7 @@ fieldset:disabled .btn {
 }
 [data-theme="dark"] .bg-dark,
 [data-theme="dark"] .text-bg-dark {
-  background-color: RGBA(255, 255, 255, var(--geeks-bg-opacity, 1)) !important;
+  background-color: black !important;
 }
 [data-theme="dark"] .text-dark {
   color: #fff !important;
@@ -45396,4 +45396,8 @@ a.fc-event:hover {
 
 .disabled {
   color:silver !important;
+}
+
+.bg-dark {
+  background-color: black !important;
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MdOutlineAttachMoney, MdOutlineLocationOn } from "react-icons/md";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 import { FaRegClock } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import logo from "../images/favicon.png";
 
 const Cards = ({ data, theme }) => {
@@ -38,7 +38,13 @@ const Cards = ({ data, theme }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.lastname || !formData.email || !formData.phone || !formData.cv) {
+    if (
+      !formData.name ||
+      !formData.lastname ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.cv
+    ) {
       alert("Todos los campos son obligatorios");
       return;
     }
@@ -50,56 +56,83 @@ const Cards = ({ data, theme }) => {
     formDataEmail.append("from_phone", formData.phone);
     formDataEmail.append("cv_file", formData.cv);
 
-    emailjs
-      .sendForm("service_gfyy33r", "template_mh1kflu", formDataEmail, "5JPVjN0ZH-C24tTVE")
-      .then(
-        (response) => {
-          alert("Tu solicitud ha sido enviada correctamente.");
-          closeModal();
-        },
-        (error) => {
-          alert("Hubo un error al enviar el formulario. Intenta nuevamente.");
-          console.error("Error:", error);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_gfyy33r",
+    //     "template_mh1kflu",
+    //     formDataEmail,
+    //     "5JPVjN0ZH-C24tTVE"
+    //   )
+    //   .then(
+    //     (response) => {
+    //       alert("Tu solicitud ha sido enviada correctamente.");
+    //       closeModal();
+    //     },
+    //     (error) => {
+    //       alert("Hubo un error al enviar el formulario. Intenta nuevamente.");
+    //       console.error("Error:", error);
+    //     }
+    //   );
   };
+
+  const message = `Hola, soy ${formData.name} ${formData.lastname}. Quiero aplicar a ${selectedJob}. Mis datos de contacto son: email: ${formData.email}, teléfono: ${formData.phone}`;
 
   return (
     <>
-      <section className={`container mt-5 bg-${theme} text-${theme === "light" ? "dark" : "light"}`}>
+      <section
+        className={`container mt-5 bg-${theme} text-${
+          theme === "light" ? "dark" : "light"
+        }`}
+      >
         <div className="container cards">
           <div className="row">
             <div className="col-xl-8 col-md-12 col-12 offset-xl-2">
               <div className="text-center mb-8">
-                <span className="text-uppercase fw-semi-bold ls-md color">Últimas ofertas</span>
+                <span className="text-uppercase fw-semi-bold ls-md color">
+                  Últimas ofertas
+                </span>
                 <h2 className="h2 fw-bold mt-3">
-                  TU EXPERIENCIA EN HOTELERÍA Y TURISMO ESTÁ A UN CLICK DE DISTANCIA
+                  TU EXPERIENCIA EN HOTELERÍA Y TURISMO ESTÁ A UN CLICK DE
+                  DISTANCIA
                 </h2>
-                <h3 className="h3 fw-bold mt-3">Aplica a tu próxima experiencia en el exterior</h3>
+                <h3 className="h3 fw-bold mt-3">
+                  Aplica a tu próxima experiencia en el exterior
+                </h3>
               </div>
 
               {data.map((item) => (
-                <div 
-                  className={`container mt-5 bg-${theme} text-${theme === "light" ? "dark" : "light"} 
-                  card-bordered mb-4 card-hover cursor-pointer card color-grey`} 
+                <div
+                  className={`container mt-5 bg-${theme} text-${
+                    theme === "light" ? "dark" : "light"
+                  } 
+                  card-bordered mb-4 card-hover cursor-pointer card color-grey`}
                   key={item.id}
                 >
                   <div className="card-body">
                     <div className="d-md-flex">
                       <div className="mb-3 mb-md-0">
-                        <img src={logo} alt="Logo de la empresa contratante" className="icon-shape" />
+                        <img
+                          src={logo}
+                          alt="Logo de la empresa contratante"
+                          className="icon-shape"
+                        />
                       </div>
                       <div className="ms-md-3 w-100 mt-3 mt-xl-1">
                         <div className="d-flex justify-content-between mb-3">
                           <div>
                             <h3 className="mb-1 fs-4">
-                              <a className={`text-inherit me-1 text-${theme === "light" ? "dark" : "light"} text-format`} href="#">
+                              <a
+                                className={`text-inherit me-1 text-${
+                                  theme === "light" ? "dark" : "light"
+                                } text-format`}
+                                href="#"
+                              >
                                 {item.name}
                               </a>
-                              <span className="ms-2 new">New</span>
+                              <span className="ms-2 new">Nuevo</span>
                             </h3>
                             <div>
-                              <span>at <span></span> HelpDesk (Empresa que busca)</span>
+                              <span>CER Alternativas</span>
                             </div>
                           </div>
                         </div>
@@ -109,7 +142,10 @@ const Cards = ({ data, theme }) => {
                         </div>
 
                         <div>
-                          <button className="btn button-rwbs" onClick={() => openModal(item)}>
+                          <button
+                            className="btn button-rwbs"
+                            onClick={() => openModal(item)}
+                          >
                             Aplicar
                           </button>
                         </div>
@@ -118,7 +154,7 @@ const Cards = ({ data, theme }) => {
                           <div className="mb-2 mb-md-0">
                             <span className="me-2">
                               <PiSuitcaseSimpleBold />
-                              <span className="ms-1">1 - 5 years</span>
+                              <span className="ms-1">1 - 5 años</span>
                             </span>
                             <span className="me-2">
                               <MdOutlineAttachMoney />
@@ -130,8 +166,8 @@ const Cards = ({ data, theme }) => {
                             </span>
                           </div>
                           <div>
-                            <FaRegClock />
-                            <span className="ms-1">21 hours ago</span>
+                            {/* <FaRegClock /> */}
+                            {/* <span className="ms-1">21 hours ago</span> */}
                           </div>
                         </div>
                       </div>
@@ -149,17 +185,63 @@ const Cards = ({ data, theme }) => {
           <div className="modal-dialog modal-xl">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Aplicando a: {selectedJob?.name}</h5>
-                <button type="button" className="btn-close" onClick={closeModal}></button>
+                <h5 className="modal-title">
+                  Aplicando a: {selectedJob?.name}
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModal}
+                ></button>
               </div>
               <div className="modal-body">
                 <form onSubmit={handleSubmit}>
-                  <input type="text" name="name" placeholder="Nombre" required onChange={handleChange} className="form-control mb-2" />
-                  <input type="text" name="lastname" placeholder="Apellido" required onChange={handleChange} className="form-control mb-2" />
-                  <input type="email" name="email" placeholder="Email" required onChange={handleChange} className="form-control mb-2" />
-                  <input type="tel" name="phone" placeholder="Teléfono" required onChange={handleChange} className="form-control mb-2" />
-                  <input type="file" name="cv" required onChange={handleChange} className="form-control mb-2" />
-                  <button type="submit" className="btn button-rwbs">Enviar</button>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Nombre"
+                    required
+                    onChange={handleChange}
+                    className="form-control mb-2"
+                  />
+                  <input
+                    type="text"
+                    name="lastname"
+                    placeholder="Apellido"
+                    required
+                    onChange={handleChange}
+                    className="form-control mb-2"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    onChange={handleChange}
+                    className="form-control mb-2"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Teléfono"
+                    required
+                    onChange={handleChange}
+                    className="form-control mb-2"
+                  />
+                  <input
+                    type="file"
+                    name="cv"
+                    required
+                    onChange={handleChange}
+                    className="form-control mb-2"
+                  />
+                  <a
+                    target="_blank"
+                    href={`https://wa.me/5491153103878?text=${message}`}
+                    className="btn button-rwbs"
+                  >
+                    Enviar
+                  </a>
                 </form>
               </div>
             </div>
@@ -167,7 +249,9 @@ const Cards = ({ data, theme }) => {
         </div>
       )}
 
-      {showModal && <div className="modal-backdrop show" onClick={closeModal}></div>}
+      {showModal && (
+        <div className="modal-backdrop show" onClick={closeModal}></div>
+      )}
     </>
   );
 };

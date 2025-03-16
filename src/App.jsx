@@ -33,22 +33,3 @@ function App() {
 }
 
 export default App;
-
-// function App() {
-//   const [isDark, setIsDark] = useState(true);
-
-//   const toggleClass = () => {
-//       setIsDark(!isDark);
-//   };
-
-//   return (
-//       <button
-//           className={`btn ${isDark ? 'bg-dark text-light' : 'bg-light text-dark'}`}
-//           onClick={toggleClass}
-//       >
-//           Cambiar Tema
-//       </button>
-//   );
-// }
-
-// export default App;

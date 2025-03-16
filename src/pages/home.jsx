@@ -3,8 +3,8 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
-// import vector from "../images/vector1.png";
-//import logoCer from "../images/1.png";
+import vector from "../images/vector1.png";
+import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
@@ -80,6 +80,8 @@ const Home = ({ theme, toggleTheme }) => {
       setData(offers);
     }
   };
+
+  const message = "Hola, me gustaría dejar mi CV para uno de sus programas.";
 
   return (
     <main>
@@ -198,54 +200,54 @@ const Home = ({ theme, toggleTheme }) => {
                 <h2 className="h1 fw-bold mt-3">Programas</h2>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={usa} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={usa} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">
                     Work & Travel y Pasantías rentadas en hoteles de Caribe y
                     EE.UU
                   </h5>
-                  <p class="card-text">
+                  <p className="card-text">
                     Vive una experiencia internacional trabajando en hoteles de
                     primer nivel mientras mejoras tus habilidades y conoces
                     nuevas culturas.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs">
                     Ver ofertas
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={crucero} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">Trabajá en Cruceros!</h5>
-                  <p class="card-text">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={crucero} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">Trabajá en Cruceros!</h5>
+                  <p className="card-text">
                     Embarcate en una aventura única trabajando a bordo de
                     cruceros y recorriendo el mundo mientras desarrollas tu
                     carrera en hospitalidad.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs">
                     Ver ofertas
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={training} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={training} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">
                     Training en Gerenciamiento hotelero
                   </h5>
-                  <p class="card-text">
+                  <p className="card-text">
                     Capacítate con expertos en gestión hotelera y adquiere
                     experiencia en la administración de hoteles de prestigio a
                     nivel internacional.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs">
                     Ver ofertas
                   </a>
                 </div>
@@ -368,7 +370,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <MdAttachMoney />
                     </div>
-                    <h4>Pago de la confirmacion</h4>
+                    <h4>Pago de la confirmación</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -380,7 +382,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <GrDocumentVerified />
                     </div>
-                    <h4>Reformulacion del CV para presentar en el exterior</h4>
+                    <h4>Reformulación del CV para presentar en el exterior</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -404,7 +406,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <IoTicketOutline />
                     </div>
-                    <h4>Emision de la oferta de pasantia o trabajo</h4>
+                    <h4>Emisión de la oferta de pasantia o trabajo</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -428,7 +430,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <GiPassport />
                     </div>
-                    <h4>Tramitacion de Visa</h4>
+                    <h4>Tramitación de Visa</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -440,7 +442,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <LuTicketsPlane />
                     </div>
-                    <h4>Emision del pasaje aereo</h4>
+                    <h4>Emisión del pasaje aéreo</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -452,7 +454,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <FaHandHoldingMedical />
                     </div>
-                    <h4>Seguro medico</h4>
+                    <h4>Seguro médico</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -464,7 +466,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <BiTrip />
                     </div>
-                    <h4>Traslado al pais de destino</h4>
+                    <h4>Traslado al país de destino</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -476,7 +478,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-xxl border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <BiLike className="last-icon" />
                     </div>
-                    <h3>COMIENZA LA EXPERIENCIA!!</h3>
+                    <h3>¡COMIENZA LA EXPERIENCIA!</h3>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -485,9 +487,10 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="mt-8 text-center col-sm-12">
                   <a
+                    target="_blank"
                     role="button"
                     tabIndex="0"
-                    href="#"
+                    href={`https://wa.me/5491153103878?text=${message}`}
                     className="btn button-rwbs"
                   >
                     Aplica ahora
@@ -1077,7 +1080,8 @@ const Home = ({ theme, toggleTheme }) => {
         </div>
       </section> */}
       {/* Footer */}
-      <Footer />
+      <div ref={targetRefFooter}></div>
+      <Footer targetRef={targetRef} />
     </main>
   );
 };

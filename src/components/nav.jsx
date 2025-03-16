@@ -59,7 +59,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                Inicio
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -112,8 +112,15 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#" onClick={handleClick} data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
-                Pasantías en Argentina
+              <a
+                className="nav-link disabled"
+                href="#"
+                onClick={handleClick}
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Tooltip on bottom"
+              >
+                Pasantías en Argentina (próximamente)
               </a>
             </li>
             <li className="nav-item">
@@ -122,7 +129,12 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={handleClickFooter}>
+              <a
+                className="nav-link"
+                href="#"
+                ref={targetRefFooter}
+                onClick={handleClickFooter}
+              >
                 Contáctanos
               </a>
             </li>

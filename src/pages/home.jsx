@@ -4,12 +4,12 @@ import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 import vector from "../images/vector1.png";
+import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
 // import booking from "../images/booking.png";
 // import pinterest from "../images/pinterest.png";
-import testimonio from "../images/testimonios.jpg";
 import usa from "../images/usa.jpg";
 import crucero from "../images/crucero.jpg";
 import training from "../images/training.jpg";
@@ -22,14 +22,12 @@ import { SlPeople } from "react-icons/sl";
 import { FaPenAlt } from "react-icons/fa";
 import { MdAttachMoney } from "react-icons/md";
 import { GrDocumentVerified } from "react-icons/gr";
-import { BsCalendarCheck } from "react-icons/bs";
 import { IoTicketOutline } from "react-icons/io5";
 import { GiPassport } from "react-icons/gi";
 import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -166,7 +164,7 @@ const Home = ({ theme, toggleTheme }) => {
                             className="rounded-pill btn btn-primary search-button"
                             onClick={handleSubmit}
                           >
-                            Search
+                            Buscar
                           </button>
                         </div>
                       </form>
@@ -178,7 +176,7 @@ const Home = ({ theme, toggleTheme }) => {
             {/* Vector */}
             <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
-                <img src={vector} width="90%" height="auto" />
+                <img src={logoCer} width="90%" height="auto" />
               </div>
             </div>
           </div>
@@ -186,7 +184,6 @@ const Home = ({ theme, toggleTheme }) => {
       </section>
       {/* Programas */}
       <section
-        ref={targetRef}
         className={`container text-center mt-5 bg-${theme} text-${
           theme === "light" ? "dark" : "light"
         }`}
@@ -208,9 +205,18 @@ const Home = ({ theme, toggleTheme }) => {
               <div class="card">
                 <img src={usa} class="card-img-top" alt="..." />
                 <div class="card-body body-card">
-                  <h5 class="card-title">Work & Travel y Pasantías rentadas en hoteles de Caribe y EE.UU</h5>
-                  <p class="card-text">Vive una experiencia internacional trabajando en hoteles de primer nivel mientras mejoras tus habilidades y conoces nuevas culturas.</p>
-                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
+                  <h5 class="card-title">
+                    Work & Travel y Pasantías rentadas en hoteles de Caribe y
+                    EE.UU
+                  </h5>
+                  <p class="card-text">
+                    Vive una experiencia internacional trabajando en hoteles de
+                    primer nivel mientras mejoras tus habilidades y conoces
+                    nuevas culturas.
+                  </p>
+                  <a href="#" class="btn button-rwbs">
+                    Ver ofertas
+                  </a>
                 </div>
               </div>
             </div>
@@ -219,8 +225,14 @@ const Home = ({ theme, toggleTheme }) => {
                 <img src={crucero} class="card-img-top" alt="..." />
                 <div class="card-body body-card">
                   <h5 class="card-title">Trabajá en Cruceros!</h5>
-                  <p class="card-text">Embarcate en una aventura única trabajando a bordo de cruceros y recorriendo el mundo mientras desarrollas tu carrera en hospitalidad.</p>
-                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
+                  <p class="card-text">
+                    Embarcate en una aventura única trabajando a bordo de
+                    cruceros y recorriendo el mundo mientras desarrollas tu
+                    carrera en hospitalidad.
+                  </p>
+                  <a href="#" class="btn button-rwbs">
+                    Ver ofertas
+                  </a>
                 </div>
               </div>
             </div>
@@ -228,9 +240,17 @@ const Home = ({ theme, toggleTheme }) => {
               <div class="card">
                 <img src={training} class="card-img-top" alt="..." />
                 <div class="card-body body-card">
-                  <h5 class="card-title">Training en Gerenciamiento hotelero</h5>
-                  <p class="card-text">Capacítate con expertos en gestión hotelera y adquiere experiencia en la administración de hoteles de prestigio a nivel internacional.</p>
-                  <a href="#" class="btn button-rwbs">Ver ofertas</a>
+                  <h5 class="card-title">
+                    Training en Gerenciamiento hotelero
+                  </h5>
+                  <p class="card-text">
+                    Capacítate con expertos en gestión hotelera y adquiere
+                    experiencia en la administración de hoteles de prestigio a
+                    nivel internacional.
+                  </p>
+                  <a href="#" class="btn button-rwbs">
+                    Ver ofertas
+                  </a>
                 </div>
               </div>
             </div>
@@ -266,6 +286,7 @@ const Home = ({ theme, toggleTheme }) => {
         </div>
       </section>
       {/* Oferta laborales */}
+      <div ref={targetRef}></div>
       <Cards data={data} targetRefFooter={targetRefFooter} theme={theme} />
       {/* How it works */}
       <section
@@ -288,10 +309,12 @@ const Home = ({ theme, toggleTheme }) => {
                   <ul className="steps-ul">
                     <li className="steps-li">
                       <LuGraduationCap className="steps-icons" /> <span> </span>
-                      Graduados o estudiantes del último año de la carrera de Hotelería y/o Turismo
+                      Graduados o estudiantes del último año de la carrera de
+                      Hotelería y/o Turismo
                     </li>
                     <li className="steps-li">
-                      <HiOutlineLanguage className="steps-icons" /> <span> </span>
+                      <HiOutlineLanguage className="steps-icons" />{" "}
+                      <span> </span>
                       Nivel avanzado de inglés
                     </li>
                     <li className="steps-li">
@@ -470,7 +493,7 @@ const Home = ({ theme, toggleTheme }) => {
                     href="#"
                     className="btn button-rwbs"
                   >
-                    Apply Now
+                    Aplica ahora
                   </a>
                 </div>
               </div>

@@ -138,7 +138,7 @@ const Footer = () => {
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
                   >
-                    Armamos tu cv
+                    Armamos tu cv en inglés
                   </a>
                 </li>
                 <li className=" ">
@@ -177,7 +177,7 @@ const Footer = () => {
                 Phone:
                 {/*  */}
                 <span className="text-light fw-semi-bold">
-                  (000) 123 456 789
+                +54 9 11 5 310 3878
                 </span>
               </p>
               <div className="d-flex">

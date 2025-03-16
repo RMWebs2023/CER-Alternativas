@@ -35,7 +35,6 @@ import ppal3 from "../images/ppal3.png";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
 
-
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
   const [searchJob, setSearchJob] = useState("");
@@ -81,6 +80,11 @@ const Home = ({ theme, toggleTheme }) => {
     }
   };
 
+  const handleOffer = (e) => {
+    e.preventDefault();
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   const message = "Hola, me gustaría dejar mi CV para uno de sus programas.";
 
   return (
@@ -109,7 +113,9 @@ const Home = ({ theme, toggleTheme }) => {
                   <p className="lead">Placement Solutions</p>
                 </div>
                 <div className="mt-8">
-                  <div className={`bg-${theme} rounded-md-pill shadow rounded-3 mb-4`}>
+                  <div
+                    className={`bg-${theme} rounded-md-pill shadow rounded-3 mb-4`}
+                  >
                     <div className="p-md-2 p-4">
                       <form className="row g-1">
                         <div className="col-md-5 col-sm-12">
@@ -168,13 +174,28 @@ const Home = ({ theme, toggleTheme }) => {
               <div className="position-relative ">
                 <img src={ppal} width="90%" height="auto" />
                 <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
-                  <img src={ppal1} width="90%" height="auto" className="img-fluid" />
+                  <img
+                    src={ppal1}
+                    width="90%"
+                    height="auto"
+                    className="img-fluid"
+                  />
                 </div>
-                <div class="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
-                  <img src={ppal2} width="90%" height="auto" className="img-fluid" />
+                <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                  <img
+                    src={ppal2}
+                    width="90%"
+                    height="auto"
+                    className="img-fluid"
+                  />
                 </div>
-                <div class="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
-                  <img src={ppal3} width="90%" height="auto" className="img-fluid" />
+                <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                  <img
+                    src={ppal3}
+                    width="90%"
+                    height="auto"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -213,7 +234,7 @@ const Home = ({ theme, toggleTheme }) => {
                     primer nivel mientras mejoras tus habilidades y conoces
                     nuevas culturas.
                   </p>
-                  <a href="#" className="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
@@ -229,7 +250,7 @@ const Home = ({ theme, toggleTheme }) => {
                     cruceros y recorriendo el mundo mientras desarrollas tu
                     carrera en hospitalidad.
                   </p>
-                  <a href="#" className="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
@@ -247,7 +268,7 @@ const Home = ({ theme, toggleTheme }) => {
                     experiencia en la administración de hoteles de prestigio a
                     nivel internacional.
                   </p>
-                  <a href="#" className="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
@@ -379,7 +400,7 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <GrDocumentVerified />
                     </div>
                     <h4>Reformulación del CV para presentar en el exterior</h4>
@@ -391,7 +412,7 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <SlPeople />
                     </div>
                     <h4>Entrevista con el empleador</h4>
@@ -403,7 +424,7 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <IoTicketOutline />
                     </div>
                     <h4>Emisión de la oferta de pasantia o trabajo</h4>

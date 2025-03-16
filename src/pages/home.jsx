@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 // import vector from "../images/vector1.png";
-import logoCer from "../images/1.png";
+//import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
@@ -28,7 +28,13 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-import ppal from "../images/ppal";
+import ppal from "../images/ppal.png";
+import ppal1 from "../images/ppal1.png";
+import ppal2 from "../images/ppal2.png";
+import ppal3 from "../images/ppal3.png";
+import { BsSearch } from "react-icons/bs";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -96,30 +102,21 @@ const Home = ({ theme, toggleTheme }) => {
             {/* Buscador */}
             <div className="col-lg-6 col-sm-12">
               <div>
-                <div className=" text-center text-md-start ">
+                <div className="text-center text-md-start ">
                   <h1 className=" display-2 fw-bold  mb-3">CER ALTERNATIVAS</h1>
                   <p className="lead">Placement Solutions</p>
                 </div>
                 <div className="mt-8">
-                  <div className="bg-white rounded-md-pill shadow rounded-3 mb-4">
+                  <div className={`bg-${theme} rounded-md-pill shadow rounded-3 mb-4`}>
                     <div className="p-md-2 p-4">
                       <form className="row g-1">
                         <div className="col-md-5 col-sm-12">
                           <div className="input-group">
                             <span
-                              className="bg-transparent border-0 pe-0 ps-md-3 ps-md-0 input-group-text"
+                              className={`bg-${theme} border-0 pe-0 ps-md-3 ps-md-0 input-group-text`}
                               id="searchJob"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14"
-                                height="14"
-                                fill="currentColor"
-                                className="bi bi-search text-muted"
-                                viewBox="0 0 16 16"
-                              >
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                              </svg>
+                              <BsSearch />
                             </span>
                             <input
                               onChange={handleTitleJob}
@@ -134,20 +131,10 @@ const Home = ({ theme, toggleTheme }) => {
                         <div className="col-md-4 col-sm-12">
                           <div className="input-group">
                             <span
-                              className="bg-transparent border-0 pe-0 ps-md-3 ps-md-0 input-group-text"
+                              className={`bg-${theme} border-0 pe-0 ps-md-3 ps-md-0 input-group-text`}
                               id="location"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                className="bi bi-geo-alt  text-muted"
-                                viewBox="0 0 16 16"
-                              >
-                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                              </svg>
+                              <MdOutlineLocationOn />
                             </span>
                             <input
                               onChange={handleSearchJob}
@@ -177,7 +164,16 @@ const Home = ({ theme, toggleTheme }) => {
             {/* Vector */}
             <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
-                <img src={logoCer} width="90%" height="auto" />
+                <img src={ppal} width="90%" height="auto" />
+                <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
+                  <img src={ppal1} width="90%" height="auto" className="img-fluid" />
+                </div>
+                <div class="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                  <img src={ppal2} width="90%" height="auto" className="img-fluid" />
+                </div>
+                <div class="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                  <img src={ppal3} width="90%" height="auto" className="img-fluid" />
+                </div>
               </div>
             </div>
           </div>

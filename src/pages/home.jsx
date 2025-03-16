@@ -3,7 +3,7 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
-import vector from "../images/vector1.png";
+// import vector from "../images/vector1.png";
 import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
@@ -28,6 +28,7 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
+import ppal from "../images/ppal";
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");

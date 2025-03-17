@@ -45416,3 +45416,7 @@ a.fc-event:hover {
   place-items: center;
 }
 
+.vector {
+  max-width: 90% !important;
+}
+

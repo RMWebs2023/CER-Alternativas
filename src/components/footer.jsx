@@ -217,7 +217,7 @@ const Footer = ({ targetRef }) => {
             <span>
               © 2025
               <span> </span>
-              RWbs, Todos los Derechos Reservados.
+              RWebs, Todos los Derechos Reservados.
             </span>
           </div>
           {/* <div className="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">

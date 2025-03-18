@@ -28,7 +28,7 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-import home from "../images/home.png";
+import home from "../images/home2.png";
 import ppal1 from "../images/ppal1.png";
 import ppal2 from "../images/ppal2.png";
 import ppal3 from "../images/ppal3.png";
@@ -176,10 +176,10 @@ const Home = ({ theme, toggleTheme }) => {
                 <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
                   <img src={ppal1} width="90%" height="auto" className="img-fluid" />
                 </div>
-                <div class="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
                   <img src={ppal2} width="90%" height="auto" className="img-fluid" />
                 </div>
-                <div class="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
                   <img src={ppal3} width="90%" height="auto" className="img-fluid" />
                 </div>
               </div>

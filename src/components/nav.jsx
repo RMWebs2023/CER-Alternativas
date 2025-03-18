@@ -144,7 +144,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                 <div className="modal-dialog modal-xl">
                   <div className="modal-content">
                     <div className="modal-header">
-                      <h5 className="modal-title">¿Quiénes somos?</h5>
+                      <h4 className="modal-title">¿Quiénes somos?</h4>
                       <button
                         type="button"
                         className="btn-close"
@@ -166,7 +166,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                           />
                         </div>
                         <div className="col-md-8 d-flex flex-column justify-content-center">
-                          <h6>Daniela Cerliani - Directora de CER Hoteles</h6>
+                          <h5>Daniela Cerliani - Directora de CER Hoteles</h5>
                           <p>
                             Con amplia trayectoria en el sector hotelero, hoy su
                             consultora brinda soluciones orientadas a potenciar
@@ -193,17 +193,17 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                           />
                         </div>
                         <div className="col-md-8 d-flex flex-column justify-content-center">
-                          <h6>
+                          <h5>
                             Cecilia Maldonado - Directora de bolsa de
                             alternativa laborales
-                          </h6>
+                          </h5>
                           <p>
                             Tras su experiencia en hotelería y turismo, y su
                             formación en la docencia hoy desempeña un rol en el
                             marco académico siendo coordinadora de cursos de la
                             escuela Vatel y activamente dirigiendo su bolsa de
                             trabajo, en donde recluta y orienta al aplicante
-                            para insertarse en el campo laboral. Juntas
+                            para insertarse en el campo laboral. <br /> Juntas
                             decidimos fusionarnos para diseñar programas de
                             trabajo en hotelería y turismo y ser nexo entre las
                             empresas y los aplicantes, sirviendo de apoyo en el

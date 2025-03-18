@@ -7,6 +7,7 @@ import logo from "../images/favicon.png";
 
 const Cards = ({ data, theme }) => {
   const [showModal, setShowModal] = useState(false);
+  const [showModalCard, setShowModalCard] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -15,6 +16,16 @@ const Cards = ({ data, theme }) => {
     phone: "",
     cv: null,
   });
+
+  const openModalCard = (job) => {
+    setSelectedJob(job);
+    setShowModalCard(true);
+  };
+
+  const closeModalCard = () => {
+    setShowModalCard(false);
+    setSelectedJob(null);
+  };
 
   const openModal = (job) => {
     setSelectedJob(job);
@@ -38,12 +49,19 @@ const Cards = ({ data, theme }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // if (
+    //   !formData.name ||
+    //   !formData.lastname ||
+    //   !formData.email ||
+    //   !formData.phone ||
+    //   !formData.cv
+    // )
+
     if (
       !formData.name ||
       !formData.lastname ||
       !formData.email ||
-      !formData.phone ||
-      !formData.cv
+      !formData.phone
     ) {
       alert("Todos los campos son obligatorios");
       return;
@@ -75,7 +93,7 @@ const Cards = ({ data, theme }) => {
     //   );
   };
 
-  const message = `Hola, soy ${formData.name} ${formData.lastname}. Quiero aplicar a ${selectedJob}. Mis datos de contacto son: email: ${formData.email}, teléfono: ${formData.phone}`;
+  const message = `Hola, soy ${formData.name} ${formData.lastname}. Quiero aplicar a ${selectedJob?.name}. Mis datos de contacto son: email: ${formData.email}, teléfono: ${formData.phone}`;
 
   return (
     <>
@@ -132,7 +150,7 @@ const Cards = ({ data, theme }) => {
                               <span className="ms-2 new">Nuevo</span>
                             </h3>
                             <div>
-                              <span>CER Alternativas</span>
+                              <span>{item.type}</span>
                             </div>
                           </div>
                         </div>
@@ -148,17 +166,23 @@ const Cards = ({ data, theme }) => {
                           >
                             Aplicar
                           </button>
+                          <button
+                            className="btn button-rwbs"
+                            onClick={() => openModalCard(item)}
+                          >
+                            Ver más
+                          </button>
                         </div>
 
                         <div className="d-md-flex justify-content-between">
                           <div className="mb-2 mb-md-0">
                             <span className="me-2">
                               <PiSuitcaseSimpleBold />
-                              <span className="ms-1">1 - 5 años</span>
+                              <span className="ms-1">{item.date}</span>
                             </span>
                             <span className="me-2">
-                              <MdOutlineAttachMoney />
-                              <span className="ms-1">12k - 18k</span>
+                              {/* <MdOutlineAttachMoney /> */}
+                              <span className="ms-1">{item.salary}</span>
                             </span>
                             <span className="me-2">
                               <MdOutlineLocationOn />
@@ -185,9 +209,9 @@ const Cards = ({ data, theme }) => {
           <div className="modal-dialog modal-xl">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">
+                <h4 className="modal-title">
                   Aplicando a: {selectedJob?.name}
-                </h5>
+                </h4>
                 <button
                   type="button"
                   className="btn-close"
@@ -228,13 +252,13 @@ const Cards = ({ data, theme }) => {
                     onChange={handleChange}
                     className="form-control mb-2"
                   />
-                  <input
+                  {/* <input
                     type="file"
                     name="cv"
                     required
                     onChange={handleChange}
                     className="form-control mb-2"
-                  />
+                  /> */}
                   <a
                     target="_blank"
                     href={`https://wa.me/5491153103878?text=${message}`}
@@ -251,6 +275,55 @@ const Cards = ({ data, theme }) => {
 
       {showModal && (
         <div className="modal-backdrop show" onClick={closeModal}></div>
+      )}
+
+      {showModalCard && (
+        <div className="modal show d-block" tabIndex="-1">
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">{selectedJob?.name}</h4>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={closeModalCard}
+                ></button>
+              </div>
+              <div className="modal-body">
+                <p>{selectedJob?.description}</p>
+                <h5>Requisitos laborales:</h5>
+                {selectedJob?.requirements.map((item, id) => (
+                  <div key={id}>
+                    <ul>
+                      <li>{item}</li>
+                    </ul>
+                  </div>
+                ))}
+                <h5>Beneficios ofrecidos:</h5>
+                <p>Posición: {selectedJob?.position}</p>
+                <p>Tipo de oferta: {selectedJob?.type}</p>
+                <p>Horas por semana: {selectedJob?.hoursPerWeek} horas</p>
+                <p>Ubicación: {selectedJob?.location}</p>
+                <p>Salario: {selectedJob?.salary}</p>
+                <p>Vacantes disponibles: {selectedJob?.vacancy}</p>
+
+                <button
+                  className="btn button-rwbs"
+                  onClick={() => {
+                    closeModalCard();
+                    openModal(selectedJob);
+                  }}
+                >
+                  Aplicar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showModalCard && (
+        <div className="modal-backdrop show" onClick={closeModalCard}></div>
       )}
     </>
   );

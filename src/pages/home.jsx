@@ -176,10 +176,10 @@ const Home = ({ theme, toggleTheme }) => {
                 <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
                   <img src={ppal1} width="90%" height="auto" className="img-fluid" />
                 </div>
-                <div class="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
                   <img src={ppal2} width="90%" height="auto" className="img-fluid" />
                 </div>
-                <div class="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
                   <img src={ppal3} width="90%" height="auto" className="img-fluid" />
                 </div>
               </div>

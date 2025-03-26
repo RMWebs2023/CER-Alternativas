@@ -138,7 +138,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Envianos tu CV!
                   </a>
@@ -146,7 +146,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Armamos tu cv en inglés
                   </a>
@@ -154,7 +154,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Preparamos entrevistas
                   </a>
@@ -162,7 +162,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Tramites de visa de trabajo
                   </a>
@@ -173,7 +173,7 @@ const Footer = ({ targetRef }) => {
           <div className="col-lg-3 col-md-12 col-sm-12 text-light">
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Contáctanos</h3>
-              <p>Dirección Av. Del Libertador 7766</p>
+              <p>Dirección Av. Libertador 7050, Nuñez</p>
               <p className="mb-1">
                 Correo:{" "}
                 <a

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineAttachMoney, MdOutlineLocationOn } from "react-icons/md";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
-import { FaRegClock } from "react-icons/fa";
+// import { FaRegClock } from "react-icons/fa";
 // import emailjs from "@emailjs/browser";
 import logo from "../images/favicon.png";
 
@@ -93,7 +93,7 @@ const Cards = ({ data, theme }) => {
     //   );
   };
 
-  const message = `Hola, soy ${formData.name} ${formData.lastname}. Quiero aplicar a ${selectedJob?.name}. Mis datos de contacto son: email: ${formData.email}, teléfono: ${formData.phone}`;
+  const message = `Hola, soy ${formData.name} ${formData.lastname}. \n\nQuiero aplicar a ${selectedJob?.name}. \n\nMis datos de contacto son: \nEmail: ${formData.email}, \nTeléfono: ${formData.phone} \n\nAdjunto mi CV en el correo. \n\nSaludos.`;
 
   return (
     <>
@@ -261,7 +261,9 @@ const Cards = ({ data, theme }) => {
                   /> */}
                   <a
                     target="_blank"
-                    href={`https://wa.me/5491153103878?text=${message}`}
+                    href={`mailto:ceralternativas@gmail.com?subject=Postulación ${
+                      selectedJob?.name
+                    }&body=${encodeURIComponent(message)}.`}
                     className="btn button-rwbs"
                   >
                     Enviar

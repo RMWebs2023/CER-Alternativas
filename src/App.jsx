@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 
-const basename = "/CER-Alternativas/";
+// const basename = "/CER-Alternativas/";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -21,7 +21,8 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename={basename}>
+    // <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"

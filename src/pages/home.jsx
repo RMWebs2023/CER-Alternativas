@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
 // import vector from "../images/vector1.png";
-import logoCer from "../images/1.png";
+//import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
@@ -28,7 +28,7 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-import ppal from "../images/ppal";
+import ppal from "../images/ppal.png";
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -177,7 +177,7 @@ const Home = ({ theme, toggleTheme }) => {
             {/* Vector */}
             <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
-                <img src={logoCer} width="90%" height="auto" />
+                <img src={ppal} width="90%" height="auto" />
               </div>
             </div>
           </div>

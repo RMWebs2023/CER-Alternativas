@@ -1,11 +1,13 @@
 import { useState } from "react";
-import logo from "../images/favicon_png.png";
+import logo from "../images/favicon_footer.png";
 import dani from "../images/PERFILDANI.jpeg";
 import ceci from "../images/PERFILCECI.jpeg";
 import { FaWhatsapp } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ targetRef }) => {
   const [showModal, setShowModal] = useState(false);
+
+  // modal formulario o link whatsapp
 
   const openModal = () => {
     setShowModal(true);
@@ -13,6 +15,11 @@ const Footer = () => {
 
   const closeModal = () => {
     setShowModal(false);
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault;
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -56,9 +63,9 @@ const Footer = () => {
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 offset-lg-1 text-light">
             <div className="mb-4">
-              <h3 className="fw-bold mb-3">Company</h3>
+              <h3 className="fw-bold mb-3">Compañía</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -66,7 +73,7 @@ const Footer = () => {
                     Home
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="/marketing/landings/landing-job#"
@@ -74,26 +81,29 @@ const Footer = () => {
                     Servicios
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="#"
+                    onClick={handleClick}
                   >
                     Busquedas activas
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="#"
+                    onClick={handleClick}
                   >
                     Pasantias rentadas en el exterior
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="#"
+                    onClick={handleClick}
                   >
                     Pasantias rentadas en Argentina
                   </a>
@@ -113,7 +123,7 @@ const Footer = () => {
             <div className="mb-4">
               <h3 className="fw-bold mb-3">CER Alternativas</h3>
               <ul className="nav nav-footer flex-column nav-x-0 list-unstyled">
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
                     href="#"
@@ -125,34 +135,34 @@ const Footer = () => {
                     Sobre nosotros
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Envianos tu CV!
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Armamos tu cv en inglés
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Preparamos entrevistas
                   </a>
                 </li>
-                <li className=" ">
+                <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="/marketing/landings/landing-job#"
+                    href="mailto:ceralternativas@gmail.com"
                   >
                     Tramites de visa de trabajo
                   </a>
@@ -162,26 +172,29 @@ const Footer = () => {
           </div>
           <div className="col-lg-3 col-md-12 col-sm-12 text-light">
             <div className="mb-4">
-              <h3 className="fw-bold mb-3">Get in touch</h3>
-              <p>Dirección Av. Del Libertador 7766</p>
+              <h3 className="fw-bold mb-3">Contáctanos</h3>
+              <p>Dirección Av. Libertador 7050, Nuñez</p>
               <p className="mb-1">
-                Email:{" "}
+                Correo:{" "}
                 <a
-                  href="/marketing/landings/landing-job#"
+                  href="mailto:ceralternativas@gmail.com"
                   className="text-light"
                 >
                   ceralternativas@gmail.com
                 </a>
               </p>
               <p>
-                Phone:
+                Teléfono:
                 {/*  */}
-                <span className="text-light fw-semi-bold">
-                +54 9 11 5 310 3878
-                </span>
+                <a
+                  className="text-light fw-semi-bold"
+                  href="tel:+5491153103878"
+                >
+                  +54 9 11 5310 3878
+                </a>
               </p>
               <div className="d-flex">
-                <a href="/marketing/landings/landing-job#">
+                {/* <a href="/marketing/landings/landing-job#">
                   <img
                     src="/images/svg/appstore.svg"
                     alt=""
@@ -194,7 +207,7 @@ const Footer = () => {
                     alt=""
                     className="img-fluid"
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -204,10 +217,10 @@ const Footer = () => {
             <span>
               © 2025
               <span> </span>
-              RWbs, All Rights Reserved
+              RWebs, Todos los Derechos Reservados.
             </span>
           </div>
-          <div className="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">
+          {/* <div className="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">
             <nav className="nav nav-footer">
               <a
                 className="nav-link text-light ps-0"
@@ -234,7 +247,7 @@ const Footer = () => {
                 Terms of Use
               </a>
             </nav>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -319,7 +332,7 @@ const Footer = () => {
 
       <a
         target="_blank"
-        className="btn btn-dark btn-float-button m-5 fs-4"
+        className="btn-wsp btn-dark btn-float-button m-5 fs-4"
         href="https://api.whatsapp.com/send?phone=5491153103878"
       >
         <FaWhatsapp />

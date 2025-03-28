@@ -3,8 +3,8 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
-// import vector from "../images/vector1.png";
-//import logoCer from "../images/1.png";
+import vector from "../images/vector1.png";
+import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
@@ -28,7 +28,12 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-import ppal from "../images/ppal.png";
+import home from "../images/home2.png";
+import ppal1 from "../images/ppal1.png";
+import ppal2 from "../images/ppal2.png";
+import ppal3 from "../images/ppal3.png";
+import { BsSearch } from "react-icons/bs";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 const Home = ({ theme, toggleTheme }) => {
   const [titleJob, setTitleJob] = useState("");
@@ -75,6 +80,13 @@ const Home = ({ theme, toggleTheme }) => {
     }
   };
 
+  const handleOffer = (e) => {
+    e.preventDefault();
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const message = "Hola, me gustaría dejar mi CV para uno de sus programas.";
+
   return (
     <main>
       {/* Navbar */}
@@ -96,30 +108,23 @@ const Home = ({ theme, toggleTheme }) => {
             {/* Buscador */}
             <div className="col-lg-6 col-sm-12">
               <div>
-                <div className=" text-center text-md-start ">
+                <div className="text-center text-md-start ">
                   <h1 className=" display-2 fw-bold  mb-3">CER ALTERNATIVAS</h1>
                   <p className="lead">Placement Solutions</p>
                 </div>
                 <div className="mt-8">
-                  <div className="bg-white rounded-md-pill shadow rounded-3 mb-4">
+                  <div
+                    className={`bg-${theme} rounded-md-pill shadow rounded-3 mb-4`}
+                  >
                     <div className="p-md-2 p-4">
                       <form className="row g-1">
                         <div className="col-md-5 col-sm-12">
                           <div className="input-group">
                             <span
-                              className="bg-transparent border-0 pe-0 ps-md-3 ps-md-0 input-group-text"
+                              className={`bg-${theme} border-0 pe-0 ps-md-3 ps-md-0 input-group-text`}
                               id="searchJob"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14"
-                                height="14"
-                                fill="currentColor"
-                                className="bi bi-search text-muted"
-                                viewBox="0 0 16 16"
-                              >
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                              </svg>
+                              <BsSearch />
                             </span>
                             <input
                               onChange={handleTitleJob}
@@ -134,20 +139,10 @@ const Home = ({ theme, toggleTheme }) => {
                         <div className="col-md-4 col-sm-12">
                           <div className="input-group">
                             <span
-                              className="bg-transparent border-0 pe-0 ps-md-3 ps-md-0 input-group-text"
+                              className={`bg-${theme} border-0 pe-0 ps-md-3 ps-md-0 input-group-text`}
                               id="location"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                className="bi bi-geo-alt  text-muted"
-                                viewBox="0 0 16 16"
-                              >
-                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                              </svg>
+                              <MdOutlineLocationOn />
                             </span>
                             <input
                               onChange={handleSearchJob}
@@ -175,9 +170,18 @@ const Home = ({ theme, toggleTheme }) => {
               </div>
             </div>
             {/* Vector */}
-            <div className="text-center col-lg-5 col-sm-12 offset-lg-1">
+            <div className="text-center vector col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
-                <img src={ppal} width="90%" height="auto" />
+                <img src={home} className="img-fluid "/>
+                <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
+                  <img src={ppal1} width="90%" height="auto" className="img-fluid" />
+                </div>
+                <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                  <img src={ppal2} width="90%" height="auto" className="img-fluid" />
+                </div>
+                <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
+                  <img src={ppal3} width="90%" height="auto" className="img-fluid" />
+                </div>
               </div>
             </div>
           </div>
@@ -202,54 +206,54 @@ const Home = ({ theme, toggleTheme }) => {
                 <h2 className="h1 fw-bold mt-3">Programas</h2>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={usa} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={usa} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">
                     Work & Travel y Pasantías rentadas en hoteles de Caribe y
                     EE.UU
                   </h5>
-                  <p class="card-text">
+                  <p className="card-text">
                     Vive una experiencia internacional trabajando en hoteles de
                     primer nivel mientras mejoras tus habilidades y conoces
                     nuevas culturas.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={crucero} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">Trabajá en Cruceros!</h5>
-                  <p class="card-text">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={crucero} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">Trabajá en Cruceros!</h5>
+                  <p className="card-text">
                     Embarcate en una aventura única trabajando a bordo de
                     cruceros y recorriendo el mundo mientras desarrollas tu
                     carrera en hospitalidad.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card">
-                <img src={training} class="card-img-top" alt="..." />
-                <div class="card-body body-card">
-                  <h5 class="card-title">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+              <div className="card">
+                <img src={training} className="card-img-top" alt="..." />
+                <div className="card-body body-card">
+                  <h5 className="card-title">
                     Training en Gerenciamiento hotelero
                   </h5>
-                  <p class="card-text">
+                  <p className="card-text">
                     Capacítate con expertos en gestión hotelera y adquiere
                     experiencia en la administración de hoteles de prestigio a
                     nivel internacional.
                   </p>
-                  <a href="#" class="btn button-rwbs">
+                  <a href="#" className="btn button-rwbs" onClick={handleOffer}>
                     Ver ofertas
                   </a>
                 </div>
@@ -372,7 +376,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <MdAttachMoney />
                     </div>
-                    <h4>Pago de la confirmacion</h4>
+                    <h4>Pago de la confirmación</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -381,10 +385,10 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <GrDocumentVerified />
                     </div>
-                    <h4>Reformulacion del CV para presentar en el exterior</h4>
+                    <h4>Reformulación del CV para presentar en el exterior</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -393,7 +397,7 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <SlPeople />
                     </div>
                     <h4>Entrevista con el empleador</h4>
@@ -405,10 +409,10 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <div className=" text-center">
-                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
+                    <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <IoTicketOutline />
                     </div>
-                    <h4>Emision de la oferta de pasantia o trabajo</h4>
+                    <h4>Emisión de la oferta de pasantia o trabajo</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -432,7 +436,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <GiPassport />
                     </div>
-                    <h4>Tramitacion de Visa</h4>
+                    <h4>Tramitación de Visa</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -444,7 +448,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <LuTicketsPlane />
                     </div>
-                    <h4>Emision del pasaje aereo</h4>
+                    <h4>Emisión del pasaje aéreo</h4>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -456,7 +460,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 process-line smooth-shadow-md border-hiw">
                       <FaHandHoldingMedical />
                     </div>
-                    <h4>Seguro medico</h4>
+                    <h4>Seguro médico</h4>
                     {/* <p className="mb-0 px-2">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -468,7 +472,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-lg border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <BiTrip />
                     </div>
-                    <h4>Traslado al pais de destino</h4>
+                    <h4>Traslado al país de destino</h4>
                     {/* <p className="mb-0 px-3">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -480,7 +484,7 @@ const Home = ({ theme, toggleTheme }) => {
                     <div className="icon-shape-hiw icon-xxl border-2 fs-3 rounded-circle mb-4 smooth-shadow-md border-hiw">
                       <BiLike className="last-icon" />
                     </div>
-                    <h3>COMIENZA LA EXPERIENCIA!!</h3>
+                    <h3>¡COMIENZA LA EXPERIENCIA!</h3>
                     {/* <p className="mb-0 px-1">
                       Fill in the details of the job be sure to include your
                       location restrictions if you have em!
@@ -489,9 +493,10 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="mt-8 text-center col-sm-12">
                   <a
+                    target="_blank"
                     role="button"
                     tabIndex="0"
-                    href="#"
+                    href={`https://wa.me/5491153103878?text=${message}`}
                     className="btn button-rwbs"
                   >
                     Aplica ahora
@@ -1081,7 +1086,8 @@ const Home = ({ theme, toggleTheme }) => {
         </div>
       </section> */}
       {/* Footer */}
-      <Footer />
+      <div ref={targetRefFooter}></div>
+      <Footer targetRef={targetRef} />
     </main>
   );
 };

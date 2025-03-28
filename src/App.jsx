@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 
-const basename = "/CER-Alternativas/";
+// const basename = "/CER-Alternativas/";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -21,7 +21,8 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename={basename}>
+    // <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -33,22 +34,3 @@ function App() {
 }
 
 export default App;
-
-// function App() {
-//   const [isDark, setIsDark] = useState(true);
-
-//   const toggleClass = () => {
-//       setIsDark(!isDark);
-//   };
-
-//   return (
-//       <button
-//           className={`btn ${isDark ? 'bg-dark text-light' : 'bg-light text-dark'}`}
-//           onClick={toggleClass}
-//       >
-//           Cambiar Tema
-//       </button>
-//   );
-// }
-
-// export default App;

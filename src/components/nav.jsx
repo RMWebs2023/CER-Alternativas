@@ -156,7 +156,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                         <div className="col-md-4 d-flex align-items-center justify-content-center">
                           <img
                             src={dani}
-                            className="img-fluid rounded-circle"
+                            className="img-fluid rounded-circle img-us"
                             alt="Daniela Cerliani"
                             style={{
                               width: "150px",
@@ -183,7 +183,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                         <div className="col-md-4 d-flex align-items-center justify-content-center">
                           <img
                             src={ceci}
-                            className="img-fluid rounded-circle"
+                            className="img-fluid rounded-circle img-us"
                             alt="Cecilia Maldonado"
                             style={{
                               width: "150px",
@@ -203,13 +203,16 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                             marco académico siendo coordinadora de cursos de la
                             escuela Vatel y activamente dirigiendo su bolsa de
                             trabajo, en donde recluta y orienta al aplicante
-                            para insertarse en el campo laboral. <br /> Juntas
-                            decidimos fusionarnos para diseñar programas de
-                            trabajo en hotelería y turismo y ser nexo entre las
-                            empresas y los aplicantes, sirviendo de apoyo en el
-                            proceso de búsqueda laboral y de pasantías rentadas,
-                            acompañando en su postulación y en el proceso
-                            reclutamiento.
+                            para insertarse en el campo laboral. 
+                          </p>
+                          <hr /> 
+                          <p>
+                          Juntas decidimos fusionarnos para diseñar programas de
+                          trabajo en hotelería y turismo y ser nexo entre las
+                          empresas y los aplicantes, sirviendo de apoyo en el
+                          proceso de búsqueda laboral y de pasantías rentadas,
+                          acompañando en su postulación y en el proceso
+                          reclutamiento.
                           </p>
                         </div>
                       </div>

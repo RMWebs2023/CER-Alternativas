@@ -44583,6 +44583,13 @@ a.fc-event:hover {
   .bs-stepper-header {
     overflow: scroll;
   }
+  .mobile {
+    width: 50%;
+  }
+  .wsp-mobile {
+    position: absolute;
+    right: -5px;
+  }
 }
 @media (max-width: 400px) {
   .bs-stepper .line,
@@ -45421,3 +45428,6 @@ a.fc-event:hover {
   max-width: 90% !important;
 }
 
+.img-us {
+  margin-bottom: 20px;
+}

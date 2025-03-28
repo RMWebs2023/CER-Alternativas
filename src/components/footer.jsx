@@ -332,7 +332,7 @@ const Footer = ({ targetRef }) => {
 
       <a
         target="_blank"
-        className="btn-wsp btn-dark btn-float-button m-5 fs-4"
+        className="btn-wsp btn-dark btn-float-button m-5 fs-4 wsp-mobile"
         href="https://api.whatsapp.com/send?phone=5491153103878"
       >
         <FaWhatsapp />

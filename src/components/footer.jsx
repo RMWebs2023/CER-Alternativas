@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logo from "../images/favicon_footer.png";
+import logo from "../images/logo_cer_alternativas.png";
 import dani from "../images/PERFILDANI.jpeg";
-// import ceci from "../images/PERFILCECI.jpeg";
+import lara from "../images/Lara_Calegari.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = ({ targetRef }) => {
@@ -290,11 +290,11 @@ const Footer = ({ targetRef }) => {
                     </p>
                   </div>
                 </div>
-{/* 
+
                 <div className="row align-items-stretch">
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
-                      src={ceci}
+                      src={lara}
                       className="img-fluid rounded-circle"
                       alt="Cecilia Maldonado"
                       style={{
@@ -306,24 +306,14 @@ const Footer = ({ targetRef }) => {
                   </div>
                   <div className="col-md-8 d-flex flex-column justify-content-center">
                     <h4>
-                      Cecilia Maldonado - Directora de bolsa de alternativa
-                      laborales
+                    Lara Calegari - Profesional Hotelera y Marketing specialist
                     </h4>
                     <p>
-                      Tras su experiencia en hotelería y turismo, y su formación
-                      en la docencia hoy desempeña un rol en el marco académico
-                      siendo coordinadora de cursos de la escuela Vatel y
-                      activamente dirigiendo su bolsa de trabajo, en donde
-                      recluta y orienta al aplicante para insertarse en el campo
-                      laboral. Juntas decidimos fusionarnos para diseñar
-                      programas de trabajo en hotelería y turismo y ser nexo
-                      entre las empresas y los aplicantes, sirviendo de apoyo en
-                      el proceso de búsqueda laboral y de pasantías rentadas,
-                      acompañando en su postulación y en el proceso
-                      reclutamiento.
+                      Con formación como Técnica en Hotelería y Turismo y Community Manager, hoy brinda soluciones orientadas a potenciar la visibilidad y comercialización de propiedades hoteleras. Mediante su experiencia en la gestión de OTAs (Online Travel Agencies), colabora activamente en la alta de propiedades, optimización de perfiles y asesoramiento estratégico.
                     </p>
                   </div>
-                </div> */}
+                </div>
+
               </div>
             </div>
           </div>

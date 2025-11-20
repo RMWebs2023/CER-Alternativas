@@ -301,14 +301,34 @@ const Cards = ({ data, theme }) => {
                     </ul>
                   </div>
                 ))}
-                <h5>Beneficios ofrecidos:</h5>
-                <p>Posición: {selectedJob?.position}</p>
-                <p>Tipo de oferta: {selectedJob?.type}</p>
-                <p>Horas por semana: {selectedJob?.hoursPerWeek} horas</p>
-                <p>Ubicación: {selectedJob?.location}</p>
-                <p>Salario: {selectedJob?.salary}</p>
-                <p>Vacantes disponibles: {selectedJob?.vacancy}</p>
-
+                {selectedJob?.benefits?.length > 0 ? (
+                  <>
+                    <h5>Beneficios ofrecidos:</h5>
+                    {selectedJob.benefits.map((item, id) => (
+                      <div key={id}>
+                        <ul>
+                          <li>{item}</li>
+                        </ul>
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    <p>Posición: {selectedJob?.position}</p>
+                    <p>Tipo de oferta: {selectedJob?.type}</p>
+                    <p>Horas por semana: {selectedJob?.hoursPerWeek} horas</p>
+                    <p>Ubicación: {selectedJob?.location}</p>
+                    <p>Salario: {selectedJob?.salary}</p>
+                  </>
+                )}
+                <h5>Vacantes disponibles: </h5>
+                {selectedJob?.vacancy.map((item, id) => (
+                    <div key={id}>
+                      <ul>
+                        <li>{item}</li>
+                      </ul>
+                    </div>
+                ) )}
                 <button
                   className="btn button-rwbs"
                   onClick={() => {

@@ -3,8 +3,8 @@ import Cards from "../components/cards";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import offers from "../database/database";
-import vector from "../images/vector1.png";
-import logoCer from "../images/1.png";
+// import vector from "../images/vector1.png";
+// import logoCer from "../images/1.png";
 // import stripe from "../images/stripe.png";
 // import airbnb from "../images/airbnb.png";
 // import discord from "../images/discord.png";
@@ -28,10 +28,10 @@ import { LuTicketsPlane } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { BiTrip } from "react-icons/bi";
 import { BiLike } from "react-icons/bi";
-import home from "../images/home2.png";
-import ppal1 from "../images/ppal1.png";
-import ppal2 from "../images/ppal2.png";
-import ppal3 from "../images/ppal3.png";
+import home from "../images/logo_cer_alternativas.png";
+// import ppal1 from "../images/ppal1.png";
+// import ppal2 from "../images/ppal2.png";
+// import ppal3 from "../images/ppal3.png";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
 
@@ -173,7 +173,7 @@ const Home = ({ theme, toggleTheme }) => {
             <div className="text-center vector col-lg-5 col-sm-12 offset-lg-1">
               <div className="position-relative ">
                 <img src={home} className="img-fluid "/>
-                <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
+                {/* <div className="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
                   <img src={ppal1} width="90%" height="auto" className="img-fluid mobile" />
                 </div>
                 <div className="position-absolute bottom-0 mb-12 me-n6 me-md-n4 me-lg-n12 end-0 ">
@@ -181,7 +181,7 @@ const Home = ({ theme, toggleTheme }) => {
                 </div>
                 <div className="position-absolute bottom-0 mb-n4 ms-n1 ms-md-n4 ms-lg-n7 start-0">
                   <img src={ppal3} width="90%" height="auto" className="img-fluid mobile" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -211,11 +211,10 @@ const Home = ({ theme, toggleTheme }) => {
                 <img src={usa} className="card-img-top" alt="..." />
                 <div className="card-body body-card">
                   <h5 className="card-title">
-                    Work & Travel y Pasantías rentadas en hoteles de Caribe y
-                    EE.UU
+                    Work & Travel y Pasantías rentadas en hotelería y gastronomía en Caribe, Croacia y la India
                   </h5>
                   <p className="card-text">
-                    Vive una experiencia internacional trabajando en hoteles de
+                    Vive una experiencia internacional trabajando en hoteles y restaurantes de
                     primer nivel mientras mejoras tus habilidades y conoces
                     nuevas culturas.
                   </p>

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import icon from "../images/favicon_png.png";
+import icon from "../images/logo_cer_alternativas.png";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoInvertModeOutline } from "react-icons/io5";
 import dani from "../images/PERFILDANI.jpeg";
+import lara from "../images/Lara_Calegari.jpg";
 // import ceci from "../images/PERFILCECI.jpeg";
 
 const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
@@ -100,15 +101,16 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
               <a
                 ref={targetRef}
                 className="nav-link"
-                href="#"
-                onClick={handleClick}
+                href="/Presentación 2 - Programa Work and Travel.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Búsquedas activas
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" onClick={handleClick}>
-                Pasantías rentadas al exterior
+                Vacantes en el exterior
               </a>
             </li>
             <li className="nav-item">
@@ -179,11 +181,11 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                         </div>
                       </div>
 
-                      {/* <div className="row align-items-stretch">
+                      <div className="row align-items-stretch">
                         <div className="col-md-4 d-flex align-items-center justify-content-center">
                           <img
-                            src={ceci}
-                            className="img-fluid rounded-circle img-us"
+                            src={lara}
+                            className="img-fluid rounded-circle"
                             alt="Cecilia Maldonado"
                             style={{
                               width: "150px",
@@ -193,29 +195,14 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                           />
                         </div>
                         <div className="col-md-8 d-flex flex-column justify-content-center">
-                          <h5>
-                            Cecilia Maldonado - Directora de bolsa de
-                            alternativa laborales
-                          </h5>
+                          <h4>
+                          Lara Calegari - Profesional Hotelera y Marketing specialist
+                          </h4>
                           <p>
-                            Tras su experiencia en hotelería y turismo, y su
-                            formación en la docencia hoy desempeña un rol en el
-                            marco académico siendo coordinadora de cursos de la
-                            escuela Vatel y activamente dirigiendo su bolsa de
-                            trabajo, en donde recluta y orienta al aplicante
-                            para insertarse en el campo laboral. 
-                          </p>
-                          <hr /> 
-                          <p>
-                          Juntas decidimos fusionarnos para diseñar programas de
-                          trabajo en hotelería y turismo y ser nexo entre las
-                          empresas y los aplicantes, sirviendo de apoyo en el
-                          proceso de búsqueda laboral y de pasantías rentadas,
-                          acompañando en su postulación y en el proceso
-                          reclutamiento.
+                            Con formación como Técnica en Hotelería y Turismo y Community Manager, hoy brinda soluciones orientadas a potenciar la visibilidad y comercialización de propiedades hoteleras. Mediante su experiencia en la gestión de OTAs (Online Travel Agencies), colabora activamente en la alta de propiedades, optimización de perfiles y asesoramiento estratégico.
                           </p>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>

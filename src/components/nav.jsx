@@ -3,7 +3,7 @@ import icon from "../images/favicon_png.png";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoInvertModeOutline } from "react-icons/io5";
 import dani from "../images/PERFILDANI.jpeg";
-import ceci from "../images/PERFILCECI.jpeg";
+// import ceci from "../images/PERFILCECI.jpeg";
 
 const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
   const [showModal, setShowModal] = useState(false);
@@ -179,7 +179,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                         </div>
                       </div>
 
-                      <div className="row align-items-stretch">
+                      {/* <div className="row align-items-stretch">
                         <div className="col-md-4 d-flex align-items-center justify-content-center">
                           <img
                             src={ceci}
@@ -215,7 +215,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
                           reclutamiento.
                           </p>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../images/favicon_footer.png";
 import dani from "../images/PERFILDANI.jpeg";
-import ceci from "../images/PERFILCECI.jpeg";
+// import ceci from "../images/PERFILCECI.jpeg";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = ({ targetRef }) => {
@@ -31,11 +31,11 @@ const Footer = ({ targetRef }) => {
               <img src={logo} alt="" className="logo-footer" />
               <div className="mt-4">
                 <p>
-                  Surge de la unión entre CER Hoteles Revenue Management y
+                  {/* Surge de la unión entre CER Hoteles Revenue Management y
                   Alternativas Laborales. Somos profesionales con amplia
                   experiencia en hotelería y turismo, comprometidas con tu
                   crecimiento profesional.
-                  <br /> <br />
+                  <br /> <br /> */}
                   Te conectamos con oportunidades de prácticas rentadas en el
                   exterior y te acompañamos en todo el proceso, desde la
                   postulación hasta tu desempeño laboral. ¡Impulsa tu carrera
@@ -138,7 +138,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:ceralternativas@gmail.com"
+                    href="mailto:rr.hh@ceraltenativas.com"
                   >
                     Envianos tu CV!
                   </a>
@@ -146,7 +146,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:ceralternativas@gmail.com"
+                    href="mailto:rr.hh@ceraltenativas.com"
                   >
                     Armamos tu cv en inglés
                   </a>
@@ -154,7 +154,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:ceralternativas@gmail.com"
+                    href="mailto:rr.hh@ceraltenativas.com"
                   >
                     Preparamos entrevistas
                   </a>
@@ -162,7 +162,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:ceralternativas@gmail.com"
+                    href="mailto:rr.hh@ceraltenativas.com"
                   >
                     Tramites de visa de trabajo
                   </a>
@@ -177,10 +177,10 @@ const Footer = ({ targetRef }) => {
               <p className="mb-1">
                 Correo:{" "}
                 <a
-                  href="mailto:ceralternativas@gmail.com"
+                  href="mailto:rr.hh@ceraltenativas.com"
                   className="text-light"
                 >
-                  ceralternativas@gmail.com
+                  rr.hh@ceraltenativas.com
                 </a>
               </p>
               <p>
@@ -290,7 +290,7 @@ const Footer = ({ targetRef }) => {
                     </p>
                   </div>
                 </div>
-
+{/* 
                 <div className="row align-items-stretch">
                   <div className="col-md-4 d-flex align-items-center justify-content-center">
                     <img
@@ -323,7 +323,7 @@ const Footer = ({ targetRef }) => {
                       reclutamiento.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

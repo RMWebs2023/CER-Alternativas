@@ -21,7 +21,7 @@ const offers = [
       "Ser alumno regular universitario o terciario.",
       "Conocimiento en inglés.",
       "Edad hasta 30 años.",
-      "Disponibilidad para viajar a trabajar a los Estados Unidos por un periodo de tres meses (diciembre a marzo).",
+      "Disponibilidad para viajar a trabajar a Croacia por un periodo de tres meses (diciembre a marzo).",
     ],
     benefits: ["Alojamiento incluido y sin cargo.",
       "Transporte desde/hasta el trabajo incluido.",

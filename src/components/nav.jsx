@@ -101,7 +101,7 @@ const Nav = ({ targetRef, targetRefFooter, theme, toggleTheme }) => {
               <a
                 ref={targetRef}
                 className="nav-link"
-                href="/Presentación 2 - Programa Work and Travel.pdf"
+                href="/presentacion-work-and-travel.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

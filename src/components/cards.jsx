@@ -3,7 +3,7 @@ import { MdOutlineAttachMoney, MdOutlineLocationOn } from "react-icons/md";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 // import { FaRegClock } from "react-icons/fa";
 // import emailjs from "@emailjs/browser";
-import logo from "../images/favicon.png";
+import logo from "../images/logo_cer_alternativas.png";
 
 const Cards = ({ data, theme }) => {
   const [showModal, setShowModal] = useState(false);

@@ -18,7 +18,7 @@ const offers = [
     hoursPerWeek: "40",
     location: "Croacia",
     requirements: [
-      "Ser alumno regular universitario o terciario.",
+      "Ser alumno regular universitario/terciario o egresados de la carrera de hotelería/turismo o profesionales del sector.",
       "Conocimiento en inglés.",
       "Edad hasta 30 años.",
       "Disponibilidad para viajar a trabajar a Croacia por un periodo de tres meses (diciembre a marzo).",

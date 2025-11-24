@@ -23,13 +23,15 @@ const offers = [
       "Mínimo de edad requerida: 18 años",
       "Disponibilidad para viajar a trabajar a Croacia por un periodo de tres meses (Abril a Octubre).",
     ],
-    benefits: ["Alojamiento incluido y sin cargo.",
+    benefits: [
+      "Alojamiento incluido y sin cargo.",
       "Transporte desde/hasta el trabajo incluido.",
       "2 comidas al día.",
       "Bono mensual por desempeño («Tipontop»), que varía cada mes y se paga neto además del salario base.",
-      "Bono al Empleado del Mes: 150 € Celebración de cumpleaños con regalo personalizad.",
+      "Bono al Empleado del Mes: 150 € Celebración de cumpleaños con regalo personalizado.",
       "Acceso gratuito a instalaciones deportivas y de fitness.",
-      "Horario laboral: 40 horas semanales, con un día libre."]
+      "Horario laboral: 40 horas semanales, con un día libre."
+    ]
   },
   {
     id: 2,

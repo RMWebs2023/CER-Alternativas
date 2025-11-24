@@ -20,8 +20,8 @@ const offers = [
     requirements: [
       "Ser alumno regular universitario/terciario o egresados de la carrera de hotelería/turismo o profesionales del sector.",
       "Conocimiento en inglés.",
-      "Edad hasta 30 años.",
-      "Disponibilidad para viajar a trabajar a Croacia por un periodo de tres meses (diciembre a marzo).",
+      "Mínimo de edad requerida: 18 años",
+      "Disponibilidad para viajar a trabajar a Croacia por un periodo de tres meses (Abril a Octubre).",
     ],
     benefits: ["Alojamiento incluido y sin cargo.",
       "Transporte desde/hasta el trabajo incluido.",

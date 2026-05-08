@@ -318,7 +318,7 @@ const Footer = ({ targetRef }) => {
           </div>
         </div>
       )}
-
+      {/* Boton whatsapp */}
       {/* <a
         target="_blank"
         className="btn-wsp btn-dark btn-float-button m-5 fs-4 wsp-mobile"

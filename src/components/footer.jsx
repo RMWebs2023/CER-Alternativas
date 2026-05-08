@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../images/logo_cer_alternativas.png";
 import dani from "../images/PERFILDANI.jpeg";
 import lara from "../images/Lara_Calegari.jpg";
-import { FaWhatsapp } from "react-icons/fa";
+//import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = ({ targetRef }) => {
   const [showModal, setShowModal] = useState(false);
@@ -183,16 +183,15 @@ const Footer = ({ targetRef }) => {
                   rr.hh@ceraltenativas.com
                 </a>
               </p>
-              <p>
+              {/* <p>
                 Teléfono:
-                {/*  */}
                 <a
                   className="text-light fw-semi-bold"
                   href="tel:+5491153103878"
                 >
                   +54 9 11 5310 3878
                 </a>
-              </p>
+              </p>*/}
               <div className="d-flex">
                 {/* <a href="/marketing/landings/landing-job#">
                   <img
@@ -306,7 +305,7 @@ const Footer = ({ targetRef }) => {
                   </div>
                   <div className="col-md-8 d-flex flex-column justify-content-center">
                     <h4>
-                    Lara Calegari - Profesional Hotelera y Marketing specialist
+                      Lara Calegari - Profesional Hotelera y Marketing specialist
                     </h4>
                     <p>
                       Con formación como Técnica en Hotelería y Turismo y Community Manager, hoy brinda soluciones orientadas a potenciar la visibilidad y comercialización de propiedades hoteleras. Mediante su experiencia en la gestión de OTAs (Online Travel Agencies), colabora activamente en la alta de propiedades, optimización de perfiles y asesoramiento estratégico.
@@ -320,14 +319,14 @@ const Footer = ({ targetRef }) => {
         </div>
       )}
 
-      <a
+      {/* <a
         target="_blank"
         className="btn-wsp btn-dark btn-float-button m-5 fs-4 wsp-mobile"
         href="https://api.whatsapp.com/send?phone=5491153103878"
-      >
-        <FaWhatsapp />
-      </a>
-    </footer>
+      >*/}
+      {/* <FaWhatsapp /> 
+    </a>*/}
+    </footer >
   );
 };
 

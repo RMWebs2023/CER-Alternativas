@@ -1,0 +1,39 @@
+# Publica el sitio en ceralternativas.com (hosting DonWeb) en cada push a main.
+# Requiere los secrets FTP_USERNAME y FTP_PASSWORD (los del usuario FTP del panel de DonWeb).
+name: Deploy a ceralternativas.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-produccion
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Subir dist/ por FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          # Servidor de DonWeb donde vive el dominio. Se usa este nombre y no
+          # ftp.ceralternativas.com porque el certificado TLS es *.ferozo.com.
+          server: c280.ferozo.com
+          protocol: ftps
+          security: strict
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}

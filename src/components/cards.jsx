@@ -261,7 +261,7 @@ const Cards = ({ data, theme }) => {
                   /> */}
                   <a
                     target="_blank"
-                    href={`mailto:ceralternativas@gmail.com?subject=Postulación ${
+                    href={`mailto:rr.hh@ceralternativas.com?subject=Postulación ${
                       selectedJob?.name
                     }&body=${encodeURIComponent(message)}.`}
                     className="btn button-rwbs"

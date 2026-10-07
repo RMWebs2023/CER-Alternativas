@@ -138,7 +138,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:rr.hh@ceraltenativas.com"
+                    href="mailto:rr.hh@ceralternativas.com"
                   >
                     Envianos tu CV!
                   </a>
@@ -146,7 +146,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:rr.hh@ceraltenativas.com"
+                    href="mailto:rr.hh@ceralternativas.com"
                   >
                     Armamos tu cv en inglés
                   </a>
@@ -154,7 +154,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:rr.hh@ceraltenativas.com"
+                    href="mailto:rr.hh@ceralternativas.com"
                   >
                     Preparamos entrevistas
                   </a>
@@ -162,7 +162,7 @@ const Footer = ({ targetRef }) => {
                 <li className="footer_li">
                   <a
                     className="nav-link text-light"
-                    href="mailto:rr.hh@ceraltenativas.com"
+                    href="mailto:rr.hh@ceralternativas.com"
                   >
                     Tramites de visa de trabajo
                   </a>
@@ -177,10 +177,10 @@ const Footer = ({ targetRef }) => {
               <p className="mb-1">
                 Correo:{" "}
                 <a
-                  href="mailto:rr.hh@ceraltenativas.com"
+                  href="mailto:rr.hh@ceralternativas.com"
                   className="text-light"
                 >
-                  rr.hh@ceraltenativas.com
+                  rr.hh@ceralternativas.com
                 </a>
               </p>
               {/* <p>

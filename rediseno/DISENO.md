@@ -9,7 +9,8 @@ hasta que el cliente la apruebe. Para verla, abrir `rediseno/index.html` con dob
   `src/database/database.js`. La única diferencia es que tres títulos pasaron de MAYÚSCULAS a minúscula
   normal: "Tu experiencia…", "Etapas del programa" y "¡Comienza la experiencia!".
 - **Comportamiento:** el buscador por trabajo y ubicación, el detalle de cada oferta, y el formulario
-  Aplicar, que abre el mail a `ceralternativas@gmail.com` con el mismo mensaje.
+  Aplicar, que abre el mail con el mismo mensaje. Por decisión de Walter (07/10/2026), las postulaciones ya
+  no van a `ceralternativas@gmail.com` sino a `rr.hh@ceralternativas.com`.
 - **Enlaces:** WhatsApp, el PDF de búsquedas activas, el mail de RR.HH. del footer y la dirección.
 
 ## Diseño elegido
@@ -55,6 +56,3 @@ Hay que portar la maqueta a los componentes React del sitio (`src/components/nav
 - Copiar `img/` a `src/assets/` o a `public/`.
 
 Después se publica como siempre: `npm run build` y subir por FTP.
-
-Antes de publicar hay que confirmar a qué mail van las postulaciones: hoy es `ceralternativas@gmail.com`; podría
-pasar a ser `rr.hh@ceralternativas.com`.

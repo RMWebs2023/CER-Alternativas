@@ -315,7 +315,7 @@
     var message = "Hola, soy " + v.name + " " + v.lastname + ". \n\nQuiero aplicar a " + selected.name +
       ". \n\nMis datos de contacto son: \nEmail: " + v.email + ", \nTeléfono: " + v.phone +
       " \n\nAdjunto mi CV en el correo. \n\nSaludos.";
-    window.location.href = "mailto:ceralternativas@gmail.com?subject=" +
+    window.location.href = "mailto:rr.hh@ceralternativas.com?subject=" +
       encodeURIComponent("Postulación " + selected.name) + "&body=" + encodeURIComponent(message);
     closeDialog(dlgAplicar, function () { formA.reset(); });
   });

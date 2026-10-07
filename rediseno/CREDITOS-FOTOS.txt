@@ -1,0 +1,15 @@
+Fotos de Unsplash (licencia libre, uso comercial permitido, sin atribución obligatoria):
+hero-camarero.jpg   https://unsplash.com/photos/H9q_XcRpHNo
+hero-bandeja.jpg    https://unsplash.com/photos/hEC6zxdFF0M
+prog-resort.jpg     https://unsplash.com/photos/mUqGHDMyfaE
+prog-crucero.jpg    https://unsplash.com/photos/A2MkCqYrSUw
+prog-training.jpg   https://unsplash.com/photos/kfnWOD1Tbp8
+croacia.jpg         https://unsplash.com/photos/5maoPl591Sk
+proceso.jpg         https://unsplash.com/photos/lC8i5_lJqgU
+strip-1.jpg         https://unsplash.com/photos/3mVr2eUyA_Q
+strip-2.jpg         https://unsplash.com/photos/ITh-nXlE9KY
+strip-3.jpg         https://unsplash.com/photos/dHZ1dEt7vV8
+strip-4.jpg         https://unsplash.com/photos/2fF3oedZHMA
+strip-5.jpg         https://unsplash.com/photos/zkc9vIACl-4
+strip-6.jpg         https://unsplash.com/photos/guXX_Wm-wnY
+Las fotos del equipo (equipo-*.jpg) y el logo salen del sitio actual.

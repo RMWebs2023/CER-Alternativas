@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CER Alternativas</title>
+  <meta name="description" content="CER Alternativas — Placement Solutions">
+  <link rel="icon" type="image/png" href="img/logo-mark-plum.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    try { var t = localStorage.getItem("cer-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="cabecera">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="CER Alternativas — Inicio">
+        <img class="brand-mark only-light" src="img/logo-mark-plum.png" alt="" width="30" height="31">
+        <img class="brand-mark only-dark" src="img/logo-mark-white.png" alt="" width="30" height="31">
+        <span class="brand-word"><em>CER</em> Alternativas</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="has-menu">
+            <button class="nav-link nav-btn" type="button" aria-expanded="false" aria-controls="menu-servicios">
+              Servicios <i data-lucide="chevron-down" class="ico-sm"></i>
+            </button>
+            <ul class="submenu" id="menu-servicios">
+              <li><a href="#ofertas">Oportunidades laborales</a></li>
+              <li><a href="#programa-cruceros">Cruceros</a></li>
+              <li><a href="#programa-hoteleria">Hoteles de Argentina</a></li>
+              <li><a href="#programa-training">Training en Gerenciamiento</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="https://ceralternativas.com/presentacion-work-and-travel.pdf" target="_blank" rel="noopener">Búsquedas activas</a></li>
+          <li><a class="nav-link" href="#ofertas">Vacantes en el exterior</a></li>
+          <li><span class="nav-link is-disabled" aria-disabled="true">Pasantías en Argentina <small>(próximamente)</small></span></li>
+          <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav-link nav-cta" href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Dark" title="Dark">
+          <i data-lucide="moon" class="only-light"></i>
+          <i data-lucide="sun" class="only-dark"></i>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+          <span class="burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">
+            <span class="line"><span><em>CER</em></span></span>
+            <span class="line"><span>ALTERNATIVAS</span></span>
+          </h1>
+          <p class="hero-lead load-in" style="--d:.55s"><span class="rule" aria-hidden="true"></span>Placement Solutions</p>
+
+          <form class="search load-in" id="buscador" role="search" style="--d:.7s">
+            <label class="search-field">
+              <i data-lucide="briefcase" class="ico"></i>
+              <span class="sr-only">Trabajo</span>
+              <input type="text" name="trabajo" placeholder="Trabajo" autocomplete="off">
+            </label>
+            <label class="search-field">
+              <i data-lucide="map-pin" class="ico"></i>
+              <span class="sr-only">Ubicación</span>
+              <input type="text" name="ubicacion" placeholder="Ubicación" autocomplete="off" list="destinos">
+            </label>
+            <button class="btn btn-solid" type="submit">
+              <span>Buscar</span><i data-lucide="arrow-right" class="ico-sm"></i>
+            </button>
+          </form>
+          <datalist id="destinos"></datalist>
+          <div class="quick load-in" id="destinos-rapidos" style="--d:.85s"></div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <figure class="hero-photo reveal-clip"><img src="img/hero-camarero.jpg" alt="" width="1100" height="1650"></figure>
+          <figure class="hero-photo-sm reveal-clip" style="--d:.35s"><img src="img/hero-bandeja.jpg" alt="" width="900" height="598"></figure>
+          <div class="seal load-in" style="--d:1s">
+            <svg viewBox="0 0 140 140" class="seal-text">
+              <defs><path id="seal-path" d="M70,70 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs>
+              <text><textPath href="#seal-path" textLength="326">PLACEMENT SOLUTIONS · CER ALTERNATIVAS ·&#160;</textPath></text>
+            </svg>
+            <img class="only-light" src="img/logo-mark-plum.png" alt="">
+            <img class="only-dark" src="img/logo-mark-white.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMAS ============ -->
+    <section class="section programas" id="programas">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Oportunidades</p>
+          <h2 class="h2">Programas</h2>
+        </header>
+
+        <div class="prog-grid">
+          <article class="prog-card" id="programa-hoteleria" data-reveal>
+            <a class="prog-link" href="#ofertas">
+              <figure class="prog-media"><img src="img/prog-resort.jpg" alt="" loading="lazy" width="1000" height="1500"></figure>
+              <span class="prog-num">01</span>
+              <h3 class="prog-title">Work &amp; Travel y Pasantías rentadas en hotelería y gastronomía en Caribe, Croacia y la India</h3>
+              <p class="prog-text">Vive una experiencia internacional trabajando en hoteles y restaurantes de primer nivel mientras mejoras tus habilidades y conoces nuevas culturas.</p>
+              <span class="link-arrow">Ver ofertas <i data-lucide="arrow-right" class="ico-sm"></i></span>
+            </a>
+          </article>
+
+          <article class="prog-card" id="programa-cruceros" data-reveal style="--d:.12s">
+            <a class="prog-link" href="#ofertas">
+              <figure class="prog-media"><img src="img/prog-crucero.jpg" alt="" loading="lazy" width="1000" height="1250"></figure>
+              <span class="prog-num">02</span>
+              <h3 class="prog-title">Trabajá en Cruceros!</h3>
+              <p class="prog-text">Embarcate en una aventura única trabajando a bordo de cruceros y recorriendo el mundo mientras desarrollas tu carrera en hospitalidad.</p>
+              <span class="link-arrow">Ver ofertas <i data-lucide="arrow-right" class="ico-sm"></i></span>
+            </a>
+          </article>
+
+          <article class="prog-card" id="programa-training" data-reveal style="--d:.24s">
+            <a class="prog-link" href="#ofertas">
+              <figure class="prog-media"><img src="img/prog-training.jpg" alt="" loading="lazy" width="1000" height="750"></figure>
+              <span class="prog-num">03</span>
+              <h3 class="prog-title">Training en Gerenciamiento hotelero</h3>
+              <p class="prog-text">Capacítate con expertos en gestión hotelera y adquiere experiencia en la administración de hoteles de prestigio a nivel internacional.</p>
+              <span class="link-arrow">Ver ofertas <i data-lucide="arrow-right" class="ico-sm"></i></span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIRA DE FOTOS ============ -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <img src="img/strip-1.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-2.jpg" alt="" width="900" height="600">
+        <img src="img/strip-3.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-4.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-5.jpg" alt="" width="900" height="600">
+        <img src="img/strip-6.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-1.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-2.jpg" alt="" width="900" height="600">
+        <img src="img/strip-3.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-4.jpg" alt="" width="700" height="1050">
+        <img src="img/strip-5.jpg" alt="" width="900" height="600">
+        <img src="img/strip-6.jpg" alt="" width="700" height="1050">
+      </div>
+    </div>
+
+    <!-- ============ OFERTAS ============ -->
+    <section class="section ofertas" id="ofertas">
+      <div class="wrap">
+        <header class="ofertas-head">
+          <div data-reveal>
+            <p class="eyebrow">Últimas ofertas</p>
+            <h2 class="h2 h2-long">Tu experiencia en hotelería y turismo está a un click de distancia</h2>
+          </div>
+          <figure class="ofertas-img reveal-clip" data-reveal><img src="img/croacia.jpg" alt="" loading="lazy" width="1500" height="1000"></figure>
+        </header>
+
+        <div class="ofertas-bar" data-reveal>
+          <h3 class="h3">Aplica a tu próxima experiencia en el exterior</h3>
+          <div class="filtros" id="filtros" hidden></div>
+        </div>
+
+        <ol class="jobs" id="lista-ofertas"></ol>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section proceso" id="proceso">
+      <div class="wrap proceso-grid">
+        <aside class="proceso-aside">
+          <div data-reveal>
+            <p class="eyebrow">Proceso</p>
+            <h2 class="h2">Etapas del programa</h2>
+          </div>
+          <div class="req" data-reveal style="--d:.1s">
+            <p class="eyebrow eyebrow-light">Requisitos</p>
+            <ul class="req-list">
+              <li><i data-lucide="graduation-cap" class="ico"></i><span>Graduados o estudiantes del último año de la carrera de Hotelería y/o Turismo</span></li>
+              <li><i data-lucide="languages" class="ico"></i><span>Nivel avanzado de inglés</span></li>
+              <li><i data-lucide="briefcase" class="ico"></i><span>Experiencia de al menos 1 año en el rubro hotelero/Turismo</span></li>
+              <li><i data-lucide="book-marked" class="ico"></i><span>Pasaporte y Visa vigentes</span></li>
+            </ul>
+          </div>
+        </aside>
+
+        <ol class="timeline" id="timeline">
+          <li class="step" data-reveal><span class="step-num">01</span><h4 class="step-title">Envio el CV</h4><i data-lucide="send" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">02</span><h4 class="step-title">Me citan a entrevista</h4><i data-lucide="calendar-check" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">03</span><h4 class="step-title">Me inscribo al programa</h4><i data-lucide="clipboard-check" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">04</span><h4 class="step-title">Pago de la confirmación</h4><i data-lucide="banknote" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">05</span><h4 class="step-title">Reformulación del CV para presentar en el exterior</h4><i data-lucide="pen-line" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">06</span><h4 class="step-title">Entrevista con el empleador</h4><i data-lucide="messages-square" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">07</span><h4 class="step-title">Emisión de la oferta de pasantia o trabajo</h4><i data-lucide="file-check" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">08</span><h4 class="step-title">Pago del saldo del programa</h4><i data-lucide="wallet" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">09</span><h4 class="step-title">Tramitación de Visa</h4><i data-lucide="stamp" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">10</span><h4 class="step-title">Emisión del pasaje aéreo</h4><i data-lucide="ticket" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">11</span><h4 class="step-title">Seguro médico</h4><i data-lucide="shield-plus" class="ico step-ico"></i></li>
+          <li class="step" data-reveal><span class="step-num">12</span><h4 class="step-title">Traslado al país de destino</h4><i data-lucide="plane-takeoff" class="ico step-ico"></i></li>
+        </ol>
+      </div>
+
+      <div class="wrap">
+        <div class="cta-band" data-reveal>
+          <div class="cta-copy">
+            <img class="cta-mark" src="img/logo-mark-white.png" alt="" width="56" height="58">
+            <h3 class="cta-title">¡Comienza la experiencia!</h3>
+            <a class="btn btn-sun" href="https://wa.me/5491153103878?text=Hola, me gustaría dejar mi CV para uno de sus programas." target="_blank" rel="noopener">
+              <span>Aplica ahora</span><i data-lucide="arrow-up-right" class="ico-sm"></i>
+            </a>
+          </div>
+          <figure class="cta-img"><img src="img/proceso.jpg" alt="" loading="lazy" width="900" height="1349"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section nosotros" id="nosotros">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <h2 class="h2">¿Quiénes somos?</h2>
+        </header>
+        <div class="team">
+          <article class="person" data-reveal>
+            <figure class="person-photo"><img src="img/equipo-daniela.jpg" alt="Daniela Cerliani" loading="lazy" width="900" height="1192" style="object-position:62% 25%"></figure>
+            <div class="person-body">
+              <h3 class="person-name">Daniela Cerliani</h3>
+              <p class="person-role">Directora de CER Hoteles</p>
+              <p class="person-bio">Con amplia trayectoria en el sector hotelero, hoy su consultora brinda soluciones orientadas a potenciar acciones estratégicas para el desarrollo comercial de propiedades hoteleras, gestionando el Revenue Management, Marketing Digital y tecnologías e implementando procesos que conlleven a la mejora de ingresos y volúmenes de reservas.</p>
+            </div>
+          </article>
+          <article class="person" data-reveal style="--d:.12s">
+            <figure class="person-photo"><img src="img/equipo-lara.jpg" alt="Lara Calegari" loading="lazy" width="900" height="1200" style="object-position:55% 40%"></figure>
+            <div class="person-body">
+              <h3 class="person-name">Lara Calegari</h3>
+              <p class="person-role">Profesional Hotelera y Marketing specialist</p>
+              <p class="person-bio">Con formación como Técnica en Hotelería y Turismo y Community Manager, hoy brinda soluciones orientadas a potenciar la visibilidad y comercialización de propiedades hoteleras. Mediante su experiencia en la gestión de OTAs (Online Travel Agencies), colabora activamente en la alta de propiedades, optimización de perfiles y asesoramiento estratégico.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contacto">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand" data-reveal>
+          <img src="img/logo-full-white.png" alt="CER Alternativas — Placement Solutions" width="183" height="144">
+          <p>Te conectamos con oportunidades de prácticas rentadas en el exterior y te acompañamos en todo el proceso, desde la postulación hasta tu desempeño laboral. ¡Impulsa tu carrera con nosotros!</p>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col" data-reveal style="--d:.05s">
+            <h4>Compañía</h4>
+            <ul>
+              <li><a href="#inicio">Home</a></li>
+              <li><a href="#programas">Servicios</a></li>
+              <li><a href="https://ceralternativas.com/presentacion-work-and-travel.pdf" target="_blank" rel="noopener">Busquedas activas</a></li>
+              <li><a href="#ofertas">Pasantias rentadas en el exterior</a></li>
+              <li><a href="#programas">Pasantias rentadas en Argentina</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--d:.1s">
+            <h4>CER Alternativas</h4>
+            <ul>
+              <li><a href="#nosotros">Sobre nosotros</a></li>
+              <li><a href="mailto:rr.hh@ceralternativas.com">Envianos tu CV!</a></li>
+              <li><a href="mailto:rr.hh@ceralternativas.com">Armamos tu cv en inglés</a></li>
+              <li><a href="mailto:rr.hh@ceralternativas.com">Preparamos entrevistas</a></li>
+              <li><a href="mailto:rr.hh@ceralternativas.com">Tramites de visa de trabajo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" data-reveal style="--d:.15s">
+            <h4>Contáctanos</h4>
+            <ul class="contact-list">
+              <li><i data-lucide="map-pin" class="ico"></i><a href="https://maps.google.com/?q=Av.+Libertador+7050,+Nuñez,+Buenos+Aires" target="_blank" rel="noopener"><span class="muted">Dirección</span> Av. Libertador 7050, Nuñez</a></li>
+              <li><i data-lucide="mail" class="ico"></i><a href="mailto:rr.hh@ceralternativas.com"><span class="muted">Correo:</span> rr.hh@ceralternativas.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 RWebs, Todos los Derechos Reservados.</p>
+        <a class="to-top" href="#inicio" aria-label="Inicio"><i data-lucide="arrow-up" class="ico-sm"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL: VER MÁS ============ -->
+  <dialog class="modal" id="dlg-detalle" aria-labelledby="detalle-titulo">
+    <div class="modal-inner">
+      <header class="modal-head">
+        <div>
+          <p class="tag" id="detalle-lugar"></p>
+          <h4 class="modal-title" id="detalle-titulo"></h4>
+        </div>
+        <button class="icon-btn modal-close" type="button" data-close aria-label="Cerrar"><i data-lucide="x"></i></button>
+      </header>
+      <div class="modal-body" id="detalle-cuerpo"></div>
+      <footer class="modal-foot">
+        <button class="btn btn-solid" type="button" id="detalle-aplicar"><span>Aplicar</span><i data-lucide="arrow-right" class="ico-sm"></i></button>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- ============ MODAL: APLICAR ============ -->
+  <dialog class="modal modal-sm" id="dlg-aplicar" aria-labelledby="aplicar-titulo">
+    <form class="modal-inner" id="form-aplicar" novalidate>
+      <header class="modal-head">
+        <h4 class="modal-title" id="aplicar-titulo"></h4>
+        <button class="icon-btn modal-close" type="button" data-close aria-label="Cerrar"><i data-lucide="x"></i></button>
+      </header>
+      <div class="modal-body form-grid">
+        <label class="field"><span>Nombre</span><input name="name" type="text" autocomplete="given-name" required></label>
+        <label class="field"><span>Apellido</span><input name="lastname" type="text" autocomplete="family-name" required></label>
+        <label class="field field-wide"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="field field-wide"><span>Teléfono</span><input name="phone" type="tel" autocomplete="tel" required></label>
+        <p class="form-error field-wide" id="form-error" role="alert" hidden>Todos los campos son obligatorios</p>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-solid" type="submit"><span>Enviar</span><i data-lucide="send" class="ico-sm"></i></button>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="datos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
